@@ -1,0 +1,171 @@
+/* MAIN */
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  padding: 36px;
+}
+
+.homepage-container .social-nav-container,
+.homepage-container .page-nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+/* MAIN */
+
+/* NAV ITEMS (SOCIALS & PAGES) */
+.homepage-container .social-nav-container .nav-items-container,
+.homepage-container .page-nav-container .nav-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.homepage-container .page-nav-container .nav-items-container {
+  flex-direction: row-reverse;
+}
+/* NAV ITEMS (SOCIALS & PAGES) */
+
+/* ICONS */
+.homepage-container .social-nav-container .nav-items-container .icon-container,
+.homepage-container .page-nav-container .nav-items-container .icon-container {
+  display: inline-block;
+  background-color: var(--nav-background);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  transition: all 0.3s;
+}
+
+/* :hover */
+.homepage-container
+  .social-nav-container
+  .nav-items-container:hover
+  .icon-container,
+.homepage-container
+  .page-nav-container
+  .nav-items-container:hover
+  .icon-container {
+  background-color: var(--nav-background-hover);
+}
+
+.homepage-container
+  .social-nav-container
+  .nav-items-container
+  .icon-container
+  .icon,
+.homepage-container
+  .page-nav-container
+  .nav-items-container
+  .icon-container
+  .icon {
+  font-size: 23px;
+  color: var(--nav-icon);
+  transition: all 0.4s;
+}
+
+/* :hover */
+.homepage-container
+  .social-nav-container
+  .nav-items-container:hover
+  .icon-container
+  .icon,
+.homepage-container
+  .page-nav-container
+  .nav-items-container:hover
+  .icon-container
+  .icon {
+  color: var(--nav-icon-hover);
+}
+/* ICONS */
+
+/* LINKS */
+.homepage-container .social-nav-container .nav-items-container .link,
+.homepage-container .page-nav-container .nav-items-container .link {
+  display: inline-block;
+  color: var(--nav-background);
+  background-color: var(--nav-background);
+  height: 50px;
+  padding: 0 30px 0 20px;
+  border-radius: 30px 0 0 30px;
+  translate: -280px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+
+  transition: all 0.15s ease-out;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.homepage-container .page-nav-container .nav-items-container .link {
+  padding: 0 20px 0 30px;
+  translate: 280px 0;
+  text-align: left;
+  border-radius: 0 30px 30px 0;
+}
+
+/* :after */
+.homepage-container .social-nav-container .nav-items-container .link:after {
+  content: "";
+  background-color: var(--main-background);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: auto;
+  left: -83px;
+  transition: all 0.3s ease-out;
+}
+
+/* :after */
+.homepage-container .page-nav-container .nav-items-container .link:after {
+  content: "";
+  background-color: var(--main-background);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: auto;
+  right: -83px;
+  transition: all 0.3s ease-out;
+}
+
+/* :hover */
+.homepage-container .social-nav-container .nav-items-container:hover .link,
+.homepage-container .page-nav-container .nav-items-container:hover .link {
+  background-color: var(--nav-background-hover);
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 0 30px 30px 0;
+  translate: 8px 0;
+  opacity: 1;
+}
+
+/* :hover */
+.homepage-container .page-nav-container .nav-items-container:hover .link {
+  translate: -8px 0;
+  border-radius: 30px 0 0 30px;
+}
+
+/* :hover:after */
+.homepage-container
+  .social-nav-container
+  .nav-items-container:hover
+  .link:after,
+.homepage-container .page-nav-container .nav-items-container:hover .link:after {
+  border-radius: 50%;
+}

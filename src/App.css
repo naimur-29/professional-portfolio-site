@@ -1,0 +1,19 @@
+:root {
+  --main-background: #0a192f;
+
+  /* homepage */
+  --nav-background: #020c1b;
+  --nav-background-hover: #64ffda;
+  --nav-icon: #ccd6f6;
+  --nav-icon-hover: var(--main-background);
+}
+
+.app-container {
+  background-color: var(--main-background);
+  min-width: 100w;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
