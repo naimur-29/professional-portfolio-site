@@ -9,6 +9,7 @@
   padding: 36px;
 }
 
+/* NAV ITEMS (SOCIALS & PAGES) */
 .homepage-container .social-nav-container,
 .homepage-container .page-nav-container {
   display: flex;
@@ -16,9 +17,7 @@
   gap: 20px;
   height: 100%;
 }
-/* MAIN */
 
-/* NAV ITEMS (SOCIALS & PAGES) */
 .homepage-container .social-nav-container .nav-items-container,
 .homepage-container .page-nav-container .nav-items-container {
   display: flex;
@@ -30,7 +29,6 @@
 .homepage-container .page-nav-container .nav-items-container {
   flex-direction: row-reverse;
 }
-/* NAV ITEMS (SOCIALS & PAGES) */
 
 /* ICONS */
 .homepage-container .social-nav-container .nav-items-container .icon-container,
@@ -169,3 +167,122 @@
 .homepage-container .page-nav-container .nav-items-container:hover .link:after {
   border-radius: 50%;
 }
+/* LINKS */
+/* NAV ITEMS (SOCIALS & PAGES) */
+
+/* MAIN SECTION */
+.homepage-container .main-container {
+  background: transparent;
+  position: fixed;
+  padding: 0 20% 0 16%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 21px;
+  line-height: 1.3;
+}
+
+@media (max-width: 1280px) {
+  .homepage-container .main-container {
+    padding: 0 20% 0 21%;
+    gap: 12px;
+  }
+}
+
+/* PARAGRAPH */
+.homepage-container .main-container .paragraph {
+  color: var(--paragraph);
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  max-width: 500px;
+  letter-spacing: 1px;
+}
+
+.homepage-container .main-container .paragraph .highlighted {
+  color: var(--paragraph-highlighted);
+  font-family: "PT Mono", sans-serif;
+}
+
+@media (max-width: 1280px) {
+  .homepage-container .main-container .paragraph {
+    line-height: 1.9;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    max-width: 550px;
+  }
+}
+/* PARAGRAPH */
+
+/* HEADINGS */
+.homepage-container .main-container .headings .heading {
+  color: var(--heading);
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.homepage-container .main-container .headings .heading.faded {
+  color: var(--heading-faded);
+}
+
+@media (max-width: 1280px) {
+  .homepage-container .main-container .headings .heading {
+    font-size: 2.3rem;
+  }
+
+  .homepage-container .main-container .headings {
+    margin-top: 16px;
+  }
+}
+/* HEADINGS */
+
+/* BUTTON */
+.homepage-container .main-container .btn {
+  font-size: 1.1rem;
+  font-family: "PT Mono", sans-serif;
+  outline: none;
+  border: 1px solid var(--paragraph-highlighted);
+  border-radius: 4px;
+  padding: 12px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.homepage-container .main-container .btn::after,
+.homepage-container .main-container .btn::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: var(--button-hover-color);
+  border: none;
+  outline: none;
+  opacity: 0.075;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.homepage-container .main-container .btn::before {
+  left: 0%;
+}
+
+/* :hover */
+@media (hover: hover) {
+  .homepage-container .main-container .btn:hover::after,
+  .homepage-container .main-container .btn:hover::before {
+    width: 100%;
+  }
+}
+/* BUTTON */
+/* MAIN SECTION */
+/* MAIN */

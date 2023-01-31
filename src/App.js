@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./App.css";
+import "./variables.css";
+import "./animations.css";
 
 // pages:
 import Home from "./pages/home/home";

@@ -1,0 +1,14 @@
+:root {
+  --main-background: #0a192f;
+
+  /* homepage */
+  --nav-background: #020c1b;
+  --nav-background-hover: #64ffda;
+  --nav-icon: #ccd6f6;
+  --nav-icon-hover: var(--main-background);
+  --paragraph: #8892b0;
+  --paragraph-highlighted: var(--nav-background-hover);
+  --heading: var(--nav-icon);
+  --heading-faded: var(--paragraph);
+  --button-hover-color: var(--nav-background-hover);
+}
