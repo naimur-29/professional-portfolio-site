@@ -1,0 +1,181 @@
+/* MAIN */
+.page-container {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  background: transparent;
+}
+
+/* NAV ITEMS (SOCIALS & PAGES) */
+.page-container .social-nav-container {
+  position: fixed;
+  left: 32px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-container .page-nav-container {
+  position: fixed;
+  right: 32px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-container .social-nav-container .nav-items-container,
+.page-container .page-nav-container .nav-items-container {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.page-container .page-nav-container .nav-items-container {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 992px) {
+  .page-container .social-nav-container .nav-items-container,
+  .page-container .page-nav-container .nav-items-container {
+    display: none;
+  }
+}
+
+/* ICONS */
+.page-container .social-nav-container .nav-items-container .icon-container,
+.page-container .page-nav-container .nav-items-container .icon-container {
+  display: inline-block;
+  background-color: var(--nav-background);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  transition: all 0.3s;
+}
+
+/* :hover */
+.page-container
+  .social-nav-container
+  .nav-items-container:hover
+  .icon-container,
+.page-container .page-nav-container .nav-items-container:hover .icon-container {
+  background-color: var(--nav-background-hover);
+}
+
+.page-container
+  .social-nav-container
+  .nav-items-container
+  .icon-container
+  .icon,
+.page-container .page-nav-container .nav-items-container .icon-container .icon {
+  font-size: 23px;
+  color: var(--nav-icon);
+  transition: all 0.4s;
+}
+
+/* :hover */
+.page-container
+  .social-nav-container
+  .nav-items-container:hover
+  .icon-container
+  .icon,
+.page-container
+  .page-nav-container
+  .nav-items-container:hover
+  .icon-container
+  .icon {
+  color: var(--nav-icon-hover);
+}
+/* ICONS */
+
+/* LINKS */
+.page-container .social-nav-container .nav-items-container .link,
+.page-container .page-nav-container .nav-items-container .link {
+  display: inline-block;
+  color: var(--nav-background);
+  background-color: var(--nav-background);
+  height: 50px;
+  padding: 0 30px 0 20px;
+  border-radius: 30px 0 0 30px;
+  translate: -280px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+
+  transition: all 0.15s ease-out;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.page-container .page-nav-container .nav-items-container .link {
+  padding: 0 20px 0 30px;
+  translate: 280px 0;
+  text-align: left;
+  border-radius: 0 30px 30px 0;
+}
+
+/* :after */
+.page-container .social-nav-container .nav-items-container .link:after {
+  content: "";
+  background-color: var(--main-background);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: auto;
+  left: -83px;
+  transition: all 0.3s ease-out;
+}
+
+/* :after */
+.page-container .page-nav-container .nav-items-container .link:after {
+  content: "";
+  background-color: var(--main-background);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: auto;
+  right: -83px;
+  transition: all 0.3s ease-out;
+}
+
+/* :hover */
+.page-container .social-nav-container .nav-items-container:hover .link,
+.page-container .page-nav-container .nav-items-container:hover .link {
+  background-color: var(--nav-background-hover);
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 0 30px 30px 0;
+  translate: 8px 0;
+  opacity: 1;
+}
+
+/* :hover */
+.page-container .page-nav-container .nav-items-container:hover .link {
+  translate: -8px 0;
+  border-radius: 30px 0 0 30px;
+}
+
+/* :hover:after */
+.page-container .social-nav-container .nav-items-container:hover .link:after,
+.page-container .page-nav-container .nav-items-container:hover .link:after {
+  border-radius: 50%;
+}
+/* LINKS */
+/* NAV ITEMS (SOCIALS & PAGES) */
+/* MAIN */

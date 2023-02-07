@@ -2,21 +2,9 @@ import React from "react";
 
 import "./home.css";
 
-// local components:
-import NavItem from "./components/NavItem";
-
-// local data:
-import { socials, pages } from "./data";
-
-const home = () => {
+const Home = () => {
   return (
     <section className="homepage-container">
-      <section className="social-nav-container">
-        {socials.map((item) => (
-          <NavItem icon={item.icon} context={item.context} />
-        ))}
-      </section>
-
       <main className="main-container">
         <p className="paragraph">
           <span className="highlighted">Hi, my name is</span>
@@ -35,18 +23,14 @@ const home = () => {
           <span className="highlighted">SnapAP</span>.
         </article>
 
-        <button className="btn paragraph">
-          <span className="highlighted">Get In Touch</span>
-        </button>
+        <div className="paragraph">
+          <button className="btn">
+            <span className="highlighted">Get In Touch</span>
+          </button>
+        </div>
       </main>
-
-      <section className="page-nav-container">
-        {pages.map((item) => (
-          <NavItem icon={item.icon} context={item.context} />
-        ))}
-      </section>
     </section>
   );
 };
 
-export default home;
+export default Home;
