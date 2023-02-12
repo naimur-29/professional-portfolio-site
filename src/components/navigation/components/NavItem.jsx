@@ -1,12 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const NavItem = ({ icon, context, link, isNavLink }) => {
+const NavItem = ({
+  setIsMenuActive,
+  icon,
+  context,
+  link,
+  isNavLink = false,
+  isMobile = false,
+}) => {
   return isNavLink ? (
-    <Link to={link} className="nav-items-container">
+    <NavLink
+      to={link}
+      className={({ isActive }) =>
+        isActive
+          ? `${
+              isMobile
+                ? "mobile-nav-items-container active"
+                : "nav-items-container active"
+            }`
+          : `${isMobile ? "mobile-nav-items-container" : "nav-items-container"}`
+      }
+      onClick={() => setIsMenuActive(false)}
+    >
       <div className="icon-container">{icon}</div>
       <div className="link">{context}</div>
-    </Link>
+    </NavLink>
   ) : (
     <a
       href={link}

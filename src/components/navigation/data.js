@@ -23,7 +23,7 @@ export const socials = [
     link: "https://www.linkedin.com/in/naimur-rahman-799769202/",
   },
   {
-    context: "Youtube",
+    context: "YouTube",
     icon: <BsYoutube className="icon" />,
     link: "https://www.youtube.com/@naimur29/",
   },
