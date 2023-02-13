@@ -1,4 +1,4 @@
-.homepage-container {
+.homePage-container {
   min-width: 100vw;
   height: 100vh;
   display: flex;
@@ -7,7 +7,7 @@
 }
 
 /* MAIN SECTION */
-.homepage-container .main-container {
+.homePage-container .main-container {
   background: transparent;
   padding: 0 20% 0 18%;
   width: 100%;
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 1280px) {
-  .homepage-container .main-container {
+  .homePage-container .main-container {
     padding: 0;
     gap: 12px;
     align-items: center;
@@ -30,27 +30,27 @@
 }
 
 @media (max-width: 576px) {
-  .homepage-container .main-container {
+  .homePage-container .main-container {
     padding: 26px;
   }
 }
 
 /* PARAGRAPH */
-.homepage-container .main-container .paragraph {
-  color: var(--paragraph);
+.homePage-container .main-container .paragraph {
+  color: var(--home-paragraph);
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
   max-width: 500px;
   letter-spacing: 1px;
 }
 
-.homepage-container .main-container .paragraph .highlighted {
-  color: var(--paragraph-highlighted);
+.homePage-container .main-container .paragraph .highlighted {
+  color: var(--home-paragraph-highlighted);
   font-family: "PT Mono", sans-serif;
 }
 
 @media (max-width: 1280px) {
-  .homepage-container .main-container .paragraph {
+  .homePage-container .main-container .paragraph {
     line-height: 1.9;
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -60,7 +60,7 @@
 }
 
 @media (max-width: 576px) {
-  .homepage-container .main-container .paragraph {
+  .homePage-container .main-container .paragraph {
     font-size: 0.9rem;
     letter-spacing: 0.1px;
   }
@@ -68,35 +68,35 @@
 /* PARAGRAPH */
 
 /* HEADINGS */
-.homepage-container .main-container .headings .heading {
+.homePage-container .main-container .headings .heading {
   font-family: "Poppins", sans-serif;
-  color: var(--heading);
+  color: var(--home-heading);
   font-size: 3rem;
 }
 
-.homepage-container .main-container .headings .heading.faded {
-  color: var(--heading-faded);
+.homePage-container .main-container .headings .heading.faded {
+  color: var(--home-heading-faded);
 }
 
 @media (max-width: 1280px) {
-  .homepage-container .main-container .headings {
+  .homePage-container .main-container .headings {
     margin-top: 16px;
     width: 100%;
     max-width: 550px;
   }
 
-  .homepage-container .main-container .headings .heading {
+  .homePage-container .main-container .headings .heading {
     font-size: 2.3rem;
   }
 }
 
 @media (max-width: 576px) {
-  .homepage-container .main-container .headings {
+  .homePage-container .main-container .headings {
     margin-top: 8px;
     line-height: 1.5;
   }
 
-  .homepage-container .main-container .headings .heading {
+  .homePage-container .main-container .headings .heading {
     font-size: 1.75rem;
     font-weight: 600;
   }
@@ -104,15 +104,15 @@
 /* HEADINGS */
 
 /* BUTTON */
-.homepage-container .main-container .btn {
-  color: var(--paragraph-highlighted);
+.homePage-container .main-container .btn {
+  color: var(--home-paragraph-highlighted);
   line-height: 1.5;
   max-width: 500px;
   letter-spacing: 1px;
   font-size: 1.1rem;
   font-family: "PT Mono", sans-serif;
   outline: none;
-  border: 1px solid var(--paragraph-highlighted);
+  border: 1px solid var(--home-paragraph-highlighted);
   border-radius: 4px;
   padding: 12px 20px;
   background-color: transparent;
@@ -127,15 +127,15 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.homepage-container .main-container .btn::before,
-.homepage-container .main-container .btn::after {
+.homePage-container .main-container .btn::before,
+.homePage-container .main-container .btn::after {
   content: "";
   position: absolute;
   top: 0%;
   right: 0%;
   width: 0%;
   height: 100%;
-  background-color: var(--button-hover-color);
+  background-color: var(--home-button-hover-color);
   border: none;
   outline: none;
   opacity: 0.075;
@@ -143,12 +143,12 @@
   transition: all 0.35s;
 }
 
-.homepage-container .main-container .btn::before {
+.homePage-container .main-container .btn::before {
   left: 0%;
 }
 
 @media (max-width: 1280px) {
-  .homepage-container .main-container .btn {
+  .homePage-container .main-container .btn {
     line-height: 1.9;
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -158,13 +158,13 @@
 
 /* :hover */
 @media (hover: hover) {
-  .homepage-container .main-container .btn:hover {
+  .homePage-container .main-container .btn:hover {
     transform: translateY(-5%);
     box-shadow: 0 5px 20px rgba(0, 0, 0);
   }
 
-  .homepage-container .main-container .btn:hover::after,
-  .homepage-container .main-container .btn:hover::before {
+  .homePage-container .main-container .btn:hover::after,
+  .homePage-container .main-container .btn:hover::before {
     width: 100%;
   }
 }

@@ -1,0 +1,187 @@
+/* CONTACT PAGE START */
+.contactPage-container {
+  width: min(100vw);
+  max-width: 1920px;
+  height: min(100vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+  padding: 40px 0;
+}
+
+/* MAIN HEADING START */
+.contactPage-container .main-heading-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.contactPage-container .main-heading-container .page-heading {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--about-heading-faded);
+  font-size: 6.9rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+}
+
+.contactPage-container .main-heading-container .title {
+  white-space: break-spaces;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--about-heading);
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: var(--font-sans);
+}
+
+.contactPage-container .main-heading-container .title span {
+  color: var(--about-heading-span);
+}
+/* MAIN HEADING END */
+
+/* MAIN CONTENT START */
+.contactPage-container .main-content-container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactPage-container .main-content-container .left {
+  flex: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 10px;
+}
+
+.contactPage-container .main-content-container .left .heading {
+  color: var(--about-heading);
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.contactPage-container .main-content-container .left .description {
+  color: var(--about-heading);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+.contactPage-container .main-content-container .left .links-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.contactPage-container .main-content-container .left .links-container .link {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.contactPage-container
+  .main-content-container
+  .left
+  .links-container
+  .link
+  .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactPage-container
+  .main-content-container
+  .left
+  .links-container
+  .link
+  .icon-container
+  .icon {
+  width: 36px;
+  height: 36px;
+  color: var(--about-icons);
+}
+
+.contactPage-container
+  .main-content-container
+  .left
+  .links-container
+  .link
+  .info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--about-paragraph);
+}
+
+/* :hover */
+.contactPage-container
+  .main-content-container
+  .left
+  .links-container
+  .link:hover
+  .info {
+  color: var(--about-paragraph-hover);
+}
+
+.contactPage-container
+  .main-content-container
+  .left
+  .links-container
+  .link
+  .info
+  .contact-context {
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.contactPage-container
+  .main-content-container
+  .left
+  .links-container
+  .link
+  .info
+  .contact-info {
+  font-size: 1.1rem;
+}
+
+.contactPage-container .main-content-container .right {
+  flex: 8;
+}
+/* MAIN CONTENT END */
+/* CONTACT PAGE END */
