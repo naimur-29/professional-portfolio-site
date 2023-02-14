@@ -21,6 +21,7 @@
   --nav-title: #e6f1ff;
   --nav-title-span: var(--nav-background-hover);
   --nav-icon-hover: var(--main-background);
+  --nav-border-shadow: rgba(100, 255, 218, 0.15);
 
   /* home page */
   --home-paragraph: #8892b0;

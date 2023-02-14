@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import "./App.css";
-import "./variables.css";
-import "./animations.css";
+import "./css/App.css";
+import "./css/variables.css";
+import "./css/animations.css";
 
 // pages:
 import Home from "./pages/home/Home";
@@ -16,12 +16,19 @@ import Contact from "./pages/contact/Contact";
 import Layout from "./components/layout/Layout";
 
 const App = () => {
+  const [pageTitle, setPageTitle] = useState(["Home", " Page"]);
+
   return (
     <section className="app-container">
       <Router>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Layout pageTitle={pageTitle} setPageTitle={setPageTitle} />
+            }
+          >
+            <Route path="/" element={<Home setPageTitle={setPageTitle} />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />

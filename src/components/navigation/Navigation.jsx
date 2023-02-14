@@ -9,9 +9,8 @@ import NavItem from "./components/NavItem";
 import { socials, pages } from "./data";
 const pagesMobile = [pages[2], ...pages.slice(0, 2), ...pages.slice(3)];
 
-const Navigation = () => {
+const Navigation = ({ pageTitle, setPageTitle }) => {
   const [isMenuActive, setIsMenuActive] = useState(false);
-  const [title, setTitle] = useState(["Home", " Page"]);
 
   return (
     <section className="page-container">
@@ -49,8 +48,8 @@ const Navigation = () => {
 
         <div className="title">
           <h3 className="title-content">
-            {title[0]}
-            <span>{title[1]}</span>
+            {pageTitle[0]}
+            <span>{pageTitle[1]}</span>
           </h3>
         </div>
 
@@ -73,7 +72,7 @@ const Navigation = () => {
           {pagesMobile.map((item, index) => (
             <NavItem
               key={index}
-              setTitle={setTitle}
+              setPageTitle={setPageTitle}
               setIsMenuActive={setIsMenuActive}
               icon={item.icon}
               context={item.context}

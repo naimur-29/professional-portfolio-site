@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./home.css";
 
-const Home = () => {
+const Home = ({ setPageTitle }) => {
   const navigate = useNavigate();
 
   return (
@@ -26,7 +26,13 @@ const Home = () => {
           <span className="highlighted">SnapAP</span>.
         </article>
 
-        <div className="paragraph" onClick={() => navigate("contact")}>
+        <div
+          className="paragraph"
+          onClick={() => {
+            navigate("contact");
+            setPageTitle(["Get In", " Touch"]);
+          }}
+        >
           <button className="btn">
             <span className="highlighted">Get In Touch</span>
           </button>
