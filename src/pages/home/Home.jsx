@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./home.css";
 
 const Home = ({ setPageTitle }) => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setPageTitle(["Home", " Page"]);
+  }, [setPageTitle]);
 
   return (
     <section className="homePage-container">

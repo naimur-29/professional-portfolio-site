@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./contact.css";
 
 // ICONS:
 import { MdOutlineContactMail, MdOutlineContactPhone } from "react-icons/md";
 
-const About = () => {
+const About = ({ setPageTitle }) => {
+  useEffect(() => {
+    setPageTitle(["Get In", " Touch"]);
+  }, [setPageTitle]);
+
   return (
     <section className="contactPage-container">
       <section className="main-heading-container">

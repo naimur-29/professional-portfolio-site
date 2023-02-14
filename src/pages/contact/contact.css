@@ -341,6 +341,7 @@
   color: var(--about-input-placeholder);
   text-transform: uppercase;
   width: 100%;
+  opacity: 0.5;
   transition: all 0.15s;
 }
 
@@ -421,8 +422,9 @@
   color: var(--about-input-placeholder);
   text-transform: uppercase;
   width: 100%;
-  transition: all 0.15s;
+  opacity: 0.5;
   font-size: 16px;
+  transition: all 0.15s;
 }
 
 /* ::focus */

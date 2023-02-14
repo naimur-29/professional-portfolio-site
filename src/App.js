@@ -22,17 +22,24 @@ const App = () => {
     <section className="app-container">
       <Router>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <Layout pageTitle={pageTitle} setPageTitle={setPageTitle} />
-            }
-          >
+          <Route path="/" element={<Layout pageTitle={pageTitle} />}>
             <Route path="/" element={<Home setPageTitle={setPageTitle} />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/about"
+              element={<About setPageTitle={setPageTitle} />}
+            />
+            <Route
+              path="/projects"
+              element={<Projects setPageTitle={setPageTitle} />}
+            />
+            <Route
+              path="/blog"
+              element={<Blog setPageTitle={setPageTitle} />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact setPageTitle={setPageTitle} />}
+            />
           </Route>
         </Routes>
       </Router>

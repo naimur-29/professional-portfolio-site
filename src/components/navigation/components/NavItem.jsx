@@ -2,12 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const NavItem = ({
-  setPageTitle,
   setIsMenuActive,
   icon,
   context,
   link,
-  title,
   isNavLink = false,
   isMobile = false,
 }) => {
@@ -25,7 +23,6 @@ const NavItem = ({
       }
       onClick={() => {
         setIsMenuActive(false);
-        setPageTitle(title);
       }}
     >
       <div className="icon-container">{icon}</div>

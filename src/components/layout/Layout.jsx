@@ -4,10 +4,10 @@ import { Outlet } from "react-router-dom";
 // global components:
 import Navigation from "../navigation/Navigation";
 
-const Layout = ({ pageTitle, setPageTitle }) => {
+const Layout = ({ pageTitle }) => {
   return (
     <section className="layout">
-      <Navigation pageTitle={pageTitle} setPageTitle={setPageTitle} />
+      <Navigation pageTitle={pageTitle} />
       <Outlet />
     </section>
   );

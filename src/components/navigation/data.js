@@ -43,31 +43,26 @@ export const pages = [
   {
     context: "About",
     icon: <BsPersonBoundingBox className="icon" />,
-    link: "/about",
-    title: ["About", " Me"],
+    link: "about",
   },
   {
     context: "Projects",
     icon: <BsFillCollectionFill className="icon" />,
-    link: "/projects",
-    title: ["My", " Projects"],
+    link: "projects",
   },
   {
     context: "Home",
     icon: <HiHomeModern className="icon" />,
     link: "/",
-    title: ["Home", " Page"],
   },
   {
     context: "Blog",
     icon: <SiGooglemessages className="icon" />,
-    link: "/blog",
-    title: ["My", " Blog"],
+    link: "blog",
   },
   {
     context: "Contact",
     icon: <IoCall className="icon" />,
-    link: "/contact",
-    title: ["Get In", " Touch"],
+    link: "contact",
   },
 ];

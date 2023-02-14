@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Projects = () => {
+import "./projects.css";
+
+const Projects = ({ setPageTitle }) => {
+  useEffect(() => {
+    setPageTitle(["My", " Projects"]);
+  }, [setPageTitle]);
+
   return <div>projects</div>;
 };
 

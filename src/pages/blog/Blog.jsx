@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Blog = () => {
+const Blog = ({ setPageTitle }) => {
+  useEffect(() => {
+    setPageTitle(["My", " Blog"]);
+  }, [setPageTitle]);
+
   return <div>blog</div>;
 };
 
