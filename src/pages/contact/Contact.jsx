@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
         <div className="right">
-          <div className="top">
+          <div className="input-fields-container">
             <input className="contact-input" type="text" placeholder="Name" />
             <input className="contact-input" type="email" placeholder="Email" />
             <input
@@ -62,7 +62,7 @@ const About = () => {
             />
           </div>
 
-          <div className="bottom">
+          <div className="textarea-container">
             <textarea
               name="message"
               id=""
@@ -70,7 +70,9 @@ const About = () => {
               rows="10"
               placeholder="Message"
             ></textarea>
+          </div>
 
+          <div className="btn-container">
             <button className="btn">
               <span>Send Message</span>
               <div className="icon-container"></div>

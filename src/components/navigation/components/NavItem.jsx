@@ -2,10 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const NavItem = ({
+  setTitle,
   setIsMenuActive,
   icon,
   context,
   link,
+  title,
   isNavLink = false,
   isMobile = false,
 }) => {
@@ -21,7 +23,10 @@ const NavItem = ({
             }`
           : `${isMobile ? "mobile-nav-items-container" : "nav-items-container"}`
       }
-      onClick={() => setIsMenuActive(false)}
+      onClick={() => {
+        setIsMenuActive(false);
+        setTitle(title);
+      }}
     >
       <div className="icon-container">{icon}</div>
       <div className="link">{context}</div>

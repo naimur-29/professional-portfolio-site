@@ -2,14 +2,24 @@
   --main-background: #0a192f;
 
   /* fonts */
+  --font-pure-mono: monospace, sans-serif;
   --font-mono: "PT Mono", sans-serif;
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
+
+  /* buttons */
+  --button-text: #64ffda;
+  --button-border: #64ffda;
+  --button-background: transparent;
+  --button-pseudo-background-hover: #64ffda;
+  --button-shadow: #000;
 
   /* navigation */
   --nav-background: #020c1b;
   --nav-background-hover: #64ffda;
   --nav-icon: #ccd6f6;
+  --nav-title: #e6f1ff;
+  --nav-title-span: var(--nav-background-hover);
   --nav-icon-hover: var(--main-background);
 
   /* home page */
@@ -26,4 +36,9 @@
   --about-icons: var(--about-heading-span);
   --about-paragraph: var(--nav-icon);
   --about-paragraph-hover: var(--about-heading-span);
+  --about-input-background: #020c1b;
+  --about-input-text: var(--about-heading-span);
+  --about-input-border: var(--about-input-text);
+  --about-input-placeholder: var(--about-heading);
+  --about-input-shadow: rgba(100, 255, 218, 0.35);
 }

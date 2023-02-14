@@ -105,14 +105,15 @@
 
 /* BUTTON */
 .homePage-container .main-container .btn {
-  color: var(--home-paragraph-highlighted);
+  background-color: var(--button-background);
+  color: var(--button-text);
   line-height: 1.5;
   max-width: 500px;
   letter-spacing: 1px;
   font-size: 1.1rem;
-  font-family: "PT Mono", sans-serif;
+  font-family: var(--font-mono);
   outline: none;
-  border: 1px solid var(--home-paragraph-highlighted);
+  border: 1px solid var(--button-border);
   border-radius: 4px;
   padding: 12px 20px;
   background-color: transparent;
@@ -135,7 +136,7 @@
   right: 0%;
   width: 0%;
   height: 100%;
-  background-color: var(--home-button-hover-color);
+  background-color: var(--button-pseudo-background-hover);
   border: none;
   outline: none;
   opacity: 0.075;
@@ -160,7 +161,7 @@
 @media (hover: hover) {
   .homePage-container .main-container .btn:hover {
     transform: translateY(-5%);
-    box-shadow: 0 5px 20px rgba(0, 0, 0);
+    box-shadow: 0 5px 20px var(--button-shadow);
   }
 
   .homePage-container .main-container .btn:hover::after,

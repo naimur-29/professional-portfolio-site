@@ -11,18 +11,25 @@ const pagesMobile = [pages[2], ...pages.slice(0, 2), ...pages.slice(3)];
 
 const Navigation = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
+  const [title, setTitle] = useState(["Home", " Page"]);
 
   return (
     <section className="page-container">
       <section className="social-nav-container">
-        {socials.map((item) => (
-          <NavItem icon={item.icon} context={item.context} link={item.link} />
+        {socials.map((item, index) => (
+          <NavItem
+            key={index}
+            icon={item.icon}
+            context={item.context}
+            link={item.link}
+          />
         ))}
       </section>
 
       <section className="page-nav-container">
-        {pages.map((item) => (
+        {pages.map((item, index) => (
           <NavItem
+            key={index}
             icon={item.icon}
             context={item.context}
             link={item.link}
@@ -40,8 +47,15 @@ const Navigation = () => {
           />
         </a>
 
+        <div className="title">
+          <h3 className="title-content">
+            {title[0]}
+            <span>{title[1]}</span>
+          </h3>
+        </div>
+
         <div
-          className="menu-btn"
+          className={isMenuActive ? "menu-btn active" : "menu-btn"}
           onClick={() => setIsMenuActive(!isMenuActive)}
         >
           <div className="bar"></div>
@@ -58,10 +72,13 @@ const Navigation = () => {
         >
           {pagesMobile.map((item, index) => (
             <NavItem
+              key={index}
+              setTitle={setTitle}
               setIsMenuActive={setIsMenuActive}
               icon={item.icon}
               context={item.context}
               link={item.link}
+              title={item.title}
               isNavLink={true}
               isMobile={true}
             />

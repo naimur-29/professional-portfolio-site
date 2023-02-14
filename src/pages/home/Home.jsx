@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="homePage-container">
       <main className="main-container">
@@ -23,7 +26,7 @@ const Home = () => {
           <span className="highlighted">SnapAP</span>.
         </article>
 
-        <div className="paragraph">
+        <div className="paragraph" onClick={() => navigate("contact")}>
           <button className="btn">
             <span className="highlighted">Get In Touch</span>
           </button>
