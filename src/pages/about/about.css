@@ -1,0 +1,344 @@
+.aboutPage-container {
+  width: min(100vw);
+  max-width: 1920px;
+  height: min(100vh);
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* MAIN SECTION START */
+.aboutPage-container .main-content-container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 110px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* WHO AM I SECTION START */
+.aboutPage-container .main-content-container .who-am-i {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* LEFT SECTION OF (WHO AM I) START */
+.aboutPage-container .main-content-container .who-am-i > .left {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-sans);
+}
+
+/* HEADING */
+.aboutPage-container .main-content-container .who-am-i > .left .heading {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--about-text-white);
+}
+
+/* DESCRIPTION */
+.aboutPage-container .main-content-container .who-am-i > .left .description {
+  color: var(--about-text-fade);
+  line-height: 1.6;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* DOWNLOAD BUTTON START*/
+.aboutPage-container .main-content-container .who-am-i > .left .btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 576px) {
+  .aboutPage-container
+    .main-content-container
+    .who-am-i
+    > .left
+    .btn-container {
+    max-width: 220px;
+  }
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .left
+  .btn-container
+  .btn {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  line-height: 1.5;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-family: var(--font-mono);
+  outline: none;
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  transition: all 0.15s ease-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .left
+  .btn-container
+  .btn
+  .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .left
+  .btn-container
+  .btn
+  .icon-container
+  .icon {
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .aboutPage-container
+    .main-content-container
+    .who-am-i
+    > .left
+    .btn-container
+    .btn {
+    font-size: 1.1rem;
+  }
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .left
+  .btn-container
+  .btn::before,
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .left
+  .btn-container
+  .btn::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: var(--button-pseudo-background-hover);
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  opacity: 0.075;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .left
+  .btn-container
+  .btn::before {
+  left: 0%;
+}
+
+/* :hover */
+@media (hover: hover) {
+  .aboutPage-container
+    .main-content-container
+    .who-am-i
+    > .left
+    .btn-container
+    .btn:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 5px 20px var(--button-shadow);
+  }
+
+  .aboutPage-container
+    .main-content-container
+    .who-am-i
+    > .left
+    .btn-container
+    .btn:hover::after,
+  .aboutPage-container
+    .main-content-container
+    .who-am-i
+    > .left
+    .btn-container
+    .btn:hover::before {
+    width: 100%;
+  }
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .left
+  .btn-container
+  .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 5px var(--button-shadow);
+}
+/* DOWNLOAD BUTTON END*/
+/* LEFT SECTION OF (WHO AM I) END */
+
+/* RIGHT SECTION OF (WHO AM I) START */
+.aboutPage-container .main-content-container .who-am-i > .right {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-sans);
+  transform: translate(0, -30px);
+}
+
+/* TOP START*/
+.aboutPage-container .main-content-container .who-am-i > .right .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .top
+  .container {
+  border: 1px solid var(--about-text-cyan);
+  border-radius: 6px;
+  padding: 0 10px 0 40px;
+  width: 100%;
+  height: 155px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .top
+  .container
+  .amount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  color: var(--about-text-cyan);
+  font-size: 2.2rem;
+  font-weight: 100;
+  font-family: var(--font-mono);
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .top
+  .container
+  .amount
+  > span {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .top
+  .container
+  .context {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .top
+  .container
+  .context
+  > .line {
+  background-color: var(--about-text-white);
+  width: 40px;
+  height: 2px;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .top
+  .container
+  .context
+  > .text {
+  color: var(--about-text-white);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* TOP END*/
+
+.aboutPage-container .main-content-container .who-am-i > .right .bottom {
+  background-color: #fff3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .bottom
+  > .container {
+  background-color: #fff3;
+  width: 100%;
+}
+/* RIGHT SECTION OF (WHO AM I) END */
+/* WHO AM I SECTION END */
+/* MAIN SECTION END */

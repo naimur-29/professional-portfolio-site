@@ -2,23 +2,22 @@ import React, { useEffect } from "react";
 
 import "./contact.css";
 
-// ICONS:
-import { MdOutlineContactMail, MdOutlineContactPhone } from "react-icons/md";
+// import global components
+import PageHeading from "../../components/PageHeading/PageHeading";
 
-const About = ({ setPageTitle }) => {
+// import react icons
+import { MdOutlineContactMail, MdOutlineContactPhone } from "react-icons/md";
+import { FaRegPaperPlane } from "react-icons/fa";
+
+const Contact = ({ setPageTitle }) => {
+  // set page title when component mounts
   useEffect(() => {
     setPageTitle(["Get In", " Touch"]);
   }, [setPageTitle]);
 
   return (
     <section className="contactPage-container">
-      <section className="main-heading-container">
-        <h1 className="page-heading">Contact</h1>
-        <h2 className="title">
-          {"Get In "}
-          <span>Touch</span>
-        </h2>
-      </section>
+      <PageHeading heading={["Get In ", "Touch"]} pageName={"Contact"} />
 
       <main className="main-content-container">
         <div className="left">
@@ -57,6 +56,7 @@ const About = ({ setPageTitle }) => {
 
         <div className="right">
           <div className="input-fields-container">
+            {/* inputs for name, email, and subject */}
             <input className="contact-input" type="text" placeholder="Name" />
             <input className="contact-input" type="email" placeholder="Email" />
             <input
@@ -67,6 +67,7 @@ const About = ({ setPageTitle }) => {
           </div>
 
           <div className="textarea-container">
+            {/* textarea for message */}
             <textarea
               name="message"
               id=""
@@ -77,9 +78,12 @@ const About = ({ setPageTitle }) => {
           </div>
 
           <div className="btn-container">
+            {/* submit button */}
             <button className="btn">
               <span>Send Message</span>
-              <div className="icon-container"></div>
+              <div className="icon-container">
+                <FaRegPaperPlane className="icon" />
+              </div>
             </button>
           </div>
         </div>
@@ -88,4 +92,4 @@ const About = ({ setPageTitle }) => {
   );
 };
 
-export default About;
+export default Contact;

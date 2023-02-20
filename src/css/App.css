@@ -1,3 +1,5 @@
+/* This class sets up the container for the entire application,
+with a background color, full width and height, and centered content */
 .app-container {
   background-color: var(--main-background);
   min-width: 100vw;
@@ -8,6 +10,8 @@
   position: relative;
 }
 
+/* This class is for the layout component within the app-container,
+which sets up the layout for the page content */
 .app-container .layout {
   position: relative;
 }
