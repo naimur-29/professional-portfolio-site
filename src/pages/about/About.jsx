@@ -72,29 +72,37 @@ const About = ({ setPageTitle }) => {
 
             <div className="bottom">
               <div className="container">
-                <h3 className="label">Name:</h3>
-                <p className="context">Naimur Rahman</p>
+                <div className="inner-container">
+                  <h3 className="label">Name:</h3>
+                  <p className="context">Naimur Rahman</p>
+                </div>
 
-                <h3 className="label">Languages:</h3>
-                <p className="context">Eng / Bng / JPN</p>
+                <div className="inner-container">
+                  <h3 className="label">Languages:</h3>
+                  <p className="context">ENG/BNG/JPN</p>
+                </div>
 
-                <h3 className="label">
-                  {"Freelancing: "}
-                  <span className="context">Available</span>
-                </h3>
+                <div className="inner-container">
+                  <h3 className="label">Freelancing:</h3>
+                  <p className="context">Available</p>
+                </div>
               </div>
 
               <div className="container">
-                <h3 className="label">Location:</h3>
-                <p className="context">Gazipur, Bangladesh</p>
+                <div className="inner-container">
+                  <h3 className="label">Location:</h3>
+                  <p className="context">Gazipur, Bangladesh</p>
+                </div>
 
-                <h3 className="label">Phone:</h3>
-                <p className="context">+880 1843034859</p>
+                <div className="inner-container">
+                  <h3 className="label">Phone:</h3>
+                  <p className="context">+8801843034859</p>
+                </div>
 
-                <h3 className="label">
-                  {"Email: "}
-                  <span className="context">prof.naimur29@gmail.com</span>
-                </h3>
+                <div className="inner-container">
+                  <h3 className="label">Email:</h3>
+                  <p className="context">prof.naimur29@gmail.com</p>
+                </div>
               </div>
             </div>
           </div>

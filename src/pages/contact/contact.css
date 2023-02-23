@@ -7,9 +7,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 85px;
   padding: 40px 0;
   transition: all 0.25s;
+}
+
+.contactPage-container .main-heading-container {
+  margin-bottom: 60px;
 }
 
 @media (max-width: 992px) {

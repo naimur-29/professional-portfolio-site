@@ -38,10 +38,12 @@
   cursor: pointer;
   text-decoration: none;
   z-index: 999;
+  animation: 0.25s ease-in-out 0.5s backwards SlideFromLeft;
 }
 
 .page-container .page-nav-container .nav-items-container {
   flex-direction: row-reverse;
+  animation: 0.25s ease-in-out 0.5s backwards SlideFromRight;
 }
 
 @media (max-width: 992px) {

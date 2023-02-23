@@ -7,7 +7,10 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 30px;
+}
+
+.aboutPage-container > .main-heading-container {
+  margin-bottom: 30px;
 }
 
 /* MAIN SECTION START */
@@ -24,6 +27,7 @@
 /* WHO AM I SECTION START */
 .aboutPage-container .main-content-container .who-am-i {
   width: 100%;
+  height: min(400px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,6 +43,7 @@
   flex-direction: column;
   gap: 20px;
   font-family: var(--font-sans);
+  animation: 1s ease-out 0.5s backwards SlideIn;
 }
 
 /* HEADING */
@@ -221,7 +226,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   font-family: var(--font-sans);
   transform: translate(0, -30px);
 }
@@ -250,6 +255,9 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  box-shadow: 0 12px 100px var(--about-shadow-cyan);
+  animation: 0.5s ease-in Swap;
+  transition: all 0.3s;
 }
 
 .aboutPage-container
@@ -321,13 +329,16 @@
 }
 /* TOP END*/
 
+/* BOTTOM START */
 .aboutPage-container .main-content-container .who-am-i > .right .bottom {
-  background-color: #fff3;
   width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  letter-spacing: -0.25px;
+  font-family: var(--font-mono);
 }
 
 .aboutPage-container
@@ -336,9 +347,56 @@
   > .right
   .bottom
   > .container {
-  background-color: #fff3;
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
 }
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .bottom
+  > .container
+  > .inner-container {
+  width: 100%;
+  min-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  animation: 0.5s ease-out 0.5s backwards SlideIn;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .bottom
+  > .container
+  > .inner-container
+  > .label {
+  color: var(--about-text-cyan);
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.aboutPage-container
+  .main-content-container
+  .who-am-i
+  > .right
+  .bottom
+  > .container
+  > .inner-container
+  > .context {
+  color: var(--about-text-slate);
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* BOTTOM END */
 /* RIGHT SECTION OF (WHO AM I) END */
 /* WHO AM I SECTION END */
 /* MAIN SECTION END */
