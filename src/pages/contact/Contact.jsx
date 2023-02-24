@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import "./contact.css";
+import "./Contact.css";
 
 // import global components
 import PageHeading from "../../components/PageHeading/PageHeading";

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "./home.css";
+import "./Home.css";
 
 const Home = ({ setPageTitle }) => {
   // Using the useNavigate hook to navigate to other pages
