@@ -11,9 +11,11 @@
   transition: all 0.25s;
 }
 
+/* MAIN HEADING START */
 .contactPage-container .main-heading-container {
   margin-bottom: 60px;
 }
+/* MAIN HEADING END */
 
 @media (max-width: 992px) {
   .contactPage-container {
