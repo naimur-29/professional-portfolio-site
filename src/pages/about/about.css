@@ -9,9 +9,11 @@
   flex-direction: column;
 }
 
+/* MAIN HEADING START */
 .aboutPage-container > .main-heading-container {
   margin-bottom: 30px;
 }
+/* MAIN HEADING END */
 
 /* MAIN SECTION START */
 .aboutPage-container .main-content-container {

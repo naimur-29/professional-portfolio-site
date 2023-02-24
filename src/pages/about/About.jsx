@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+// import style sheet:
 import "./About.css";
 
 // import global components
