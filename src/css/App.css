@@ -5,7 +5,7 @@ with a background color, full width and height, and centered content */
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
 }

@@ -1,0 +1,87 @@
+/* EXP ITEM CONTAINER START */
+.exp-item-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* LEFT START */
+.exp-item-container > .left {
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* icon */
+.exp-item-container > .left > .icon-container {
+  background-color: var(--about-text-cyan);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* LEFT END */
+
+/* RIGHT START */
+.exp-item-container > .right {
+  width: 100%;
+  line-height: 1.3;
+  color: var(--about-text-fade);
+  font-family: var(--font-sans);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+/* date */
+.exp-item-container > .right > .date {
+  text-transform: uppercase;
+  background-color: var(--about-background-navy);
+  color: var(--about-text-white);
+  opacity: 0.8;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* title */
+.exp-item-container > .right > .title {
+  color: var(--about-text-slate-light);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* description */
+.exp-item-container > .right > .description {
+  color: var(--about-text-fade);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* vertical line */
+.exp-item-container > .right::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -41px;
+  background-color: var(--about-text-cyan);
+  width: 1px;
+  height: 100%;
+}
+/* RIGHT END */
+/* EXP ITEM CONTAINER END */

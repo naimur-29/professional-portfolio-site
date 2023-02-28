@@ -47,7 +47,9 @@
   /* about page */
   --about-text-white: var(--contact-heading);
   --about-text-slate: var(--nav-icon);
+  --about-text-slate-light: #a8b2d1;
   --about-text-cyan: var(--nav-background-hover);
   --about-text-fade: var(--home-paragraph);
   --about-shadow-cyan: rgba(100, 255, 218, 0.15);
+  --about-background-navy: #020c1b;
 }
