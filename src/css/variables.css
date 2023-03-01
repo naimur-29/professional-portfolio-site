@@ -1,6 +1,16 @@
 :root {
-  /* background colors */
-  --main-background: #0a192f;
+  /* colors */
+  --color-cyan: #64ffda;
+  --color-cyan-op15: #64ffda26;
+  --color-cyan-op35: #64ffda59;
+  --color-black: #000;
+  --color-navy: #0a192f;
+  --color-navy-dark: #020c1b;
+  --color-slate: #ccd6f6;
+  --color-slate-dark: #a8b2d1;
+  --color-slate-darker: #8892b0;
+  --color-white: #e6f1ff;
+  --color-white-op07: #ffffff12;
 
   /* fonts */
   --font-pure-mono: monospace, sans-serif;
@@ -8,48 +18,51 @@
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
 
+  /* background colors */
+  --main-background: var(--color-navy);
+
   /* buttons */
-  --button-text: #64ffda;
-  --button-border: #64ffda;
+  --button-text: var(--color-cyan);
+  --button-border: var(--color-cyan);
   --button-background: transparent;
-  --button-pseudo-background-hover: #64ffda;
-  --button-shadow: #000;
+  --button-pseudo-background-hover: var(--color-cyan);
+  --button-shadow: var(--color-black);
 
   /* navigation */
-  --nav-background: #020c1b;
-  --nav-background-hover: #64ffda;
-  --nav-icon: #ccd6f6;
-  --nav-title: #e6f1ff;
-  --nav-title-span: var(--nav-background-hover);
-  --nav-icon-hover: var(--main-background);
-  --nav-border-shadow: rgba(100, 255, 218, 0.15);
+  --nav-background: var(--color-navy-dark);
+  --nav-background-hover: var(--color-cyan);
+  --nav-icon: var(--color-slate);
+  --nav-title: var(--color-white);
+  --nav-title-span: var(--color-cyan);
+  --nav-icon-hover: var(--color-navy);
+  --nav-border-shadow: var(--color-cyan-op15);
 
   /* home page */
-  --home-paragraph: #8892b0;
-  --home-paragraph-highlighted: var(--nav-background-hover);
-  --home-heading: var(--nav-icon);
-  --home-heading-faded: var(--home-paragraph);
-  --home-button-hover-color: var(--nav-background-hover);
+  --home-paragraph: var(--color-slate-darker);
+  --home-paragraph-highlighted: var(--color-cyan);
+  --home-heading: var(--color-slate);
+  --home-heading-faded: var(--color-slate-darker);
+  --home-button-hover-color: var(--color-cyan);
 
   /* contact page */
-  --contact-heading-faded: rgb(255 255 255 / 7%);
-  --contact-heading: #e6f1ff;
-  --contact-heading-span: var(--nav-background-hover);
-  --contact-icons: var(--contact-heading-span);
-  --contact-paragraph: var(--nav-icon);
-  --contact-paragraph-hover: var(--contact-heading-span);
-  --contact-input-background: #020c1b;
-  --contact-input-text: var(--contact-heading-span);
-  --contact-input-border: var(--contact-input-text);
-  --contact-input-placeholder: var(--contact-heading);
-  --contact-input-shadow: rgba(100, 255, 218, 0.35);
+  --contact-heading-faded: var(--color-white-op07);
+  --contact-heading: var(--color-white);
+  --contact-heading-span: var(--color-cyan);
+  --contact-icons: var(--color-cyan);
+  --contact-paragraph: var(--color-slate);
+  --contact-paragraph-hover: var(--color-cyan);
+  --contact-input-background: var(--color-navy-dark);
+  --contact-input-text: var(--color-cyan);
+  --contact-input-border: var(--color-cyan);
+  --contact-input-placeholder: var(--color-white);
+  --contact-input-shadow: var(--color-cyan-op35);
 
   /* about page */
-  --about-text-white: var(--contact-heading);
-  --about-text-slate: var(--nav-icon);
-  --about-text-slate-light: #a8b2d1;
-  --about-text-cyan: var(--nav-background-hover);
-  --about-text-fade: var(--home-paragraph);
-  --about-shadow-cyan: rgba(100, 255, 218, 0.15);
-  --about-background-navy: #020c1b;
+  --about-text-white: var(--color-white);
+  --about-text-slate: var(--color-slate);
+  --about-text-slate-light: var(--color-slate-dark);
+  --about-text-fade: var(--color-slate-darker);
+  --about-text-cyan: var(--color-cyan);
+  --about-shadow-cyan: var(--color-cyan-op15);
+  --about-background-navy: var(--color-navy-dark);
 }

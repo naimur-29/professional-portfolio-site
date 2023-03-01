@@ -7,8 +7,8 @@ import "./ExpSection.css";
 import Item from "./components/Item/Item";
 
 // import local data
+import { Experiences } from "../../data/Experiences";
 import { Education } from "../../data/Education";
-import { Experience } from "../../data/Experience";
 
 const ExpSection = () => {
   return (
@@ -17,7 +17,7 @@ const ExpSection = () => {
 
       <div className="exp-content-container">
         <div className="left">
-          {Education.map((ele) => (
+          {Experiences.map((ele) => (
             <Item
               icon={ele.icon}
               date={ele.date}
@@ -28,7 +28,7 @@ const ExpSection = () => {
         </div>
 
         <div className="right">
-          {Experience.map((ele) => (
+          {Education.map((ele) => (
             <Item
               icon={ele.icon}
               date={ele.date}

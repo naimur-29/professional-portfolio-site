@@ -3,6 +3,8 @@ import React from "react";
 // import style sheet
 import "./IntroSection.css";
 
+import { IntroSectionData } from "../../data/IntroSectionData.js";
+
 // import icons
 import { ImDownload2 } from "react-icons/im";
 
@@ -10,20 +12,10 @@ const IntroSection = () => {
   return (
     <section className="intro-section-container">
       <div className="left">
-        <h3 className="heading">Who Am I?</h3>
+        <h3 className="heading">{IntroSectionData.left.heading}</h3>
 
         <article className="description">
-          A dynamic and bilingual professional with the educational background
-          and proven work ethic to guide and support full-stack development,
-          UX/UI design, web development, and more. Dedicated leader who is known
-          for producing high-quality code, and designs, with the skill set to
-          analyze complex information, manage key projects, efficiently resolve
-          issues, and deliver outstanding digital experiences. Out-of-the-box
-          thinker who is comfortable working in teams or independently to ensure
-          solutions consistently meet or exceed business goals. Strong training
-          and academic qualifications, including Googles UX/UI Design
-          Certificate, Coder Foundry's Code Bootcamp and coursework in Web &
-          Mobile Application Development at NBCC.
+          {IntroSectionData.left.description}
         </article>
 
         <div className="btn-container">
@@ -40,7 +32,7 @@ const IntroSection = () => {
         <div className="top">
           <div className="container">
             <h3 className="amount">
-              <span>5</span>+
+              <span>{IntroSectionData.right.top.totalExpYears}</span>+
             </h3>
             <div className="context">
               <div className="line"></div>
@@ -50,7 +42,7 @@ const IntroSection = () => {
 
           <div className="container">
             <h3 className="amount">
-              <span>50</span>+
+              <span>{IntroSectionData.right.top.totalToolsUsed}</span>+
             </h3>
             <div className="context">
               <div className="line"></div>
@@ -63,34 +55,40 @@ const IntroSection = () => {
           <div className="container">
             <div className="inner-container">
               <h3 className="label">Name:</h3>
-              <p className="context">Naimur Rahman</p>
+              <p className="context">{IntroSectionData.right.bottom.name}</p>
             </div>
 
             <div className="inner-container">
               <h3 className="label">Languages:</h3>
-              <p className="context">ENG/BNG/JPN</p>
+              <p className="context">
+                {IntroSectionData.right.bottom.languages}
+              </p>
             </div>
 
             <div className="inner-container">
               <h3 className="label">Freelancing:</h3>
-              <p className="context">Available</p>
+              <p className="context">
+                {IntroSectionData.right.bottom.freelancing}
+              </p>
             </div>
           </div>
 
           <div className="container">
             <div className="inner-container">
               <h3 className="label">Location:</h3>
-              <p className="context">Gazipur, Bangladesh</p>
+              <p className="context">
+                {IntroSectionData.right.bottom.location}
+              </p>
             </div>
 
             <div className="inner-container">
               <h3 className="label">Phone:</h3>
-              <p className="context">+8801843034859</p>
+              <p className="context">{IntroSectionData.right.bottom.phone}</p>
             </div>
 
             <div className="inner-container">
               <h3 className="label">Email:</h3>
-              <p className="context">prof.naimur29@gmail.com</p>
+              <p className="context">{IntroSectionData.right.bottom.email}</p>
             </div>
           </div>
         </div>

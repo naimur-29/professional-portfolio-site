@@ -4,25 +4,32 @@ import { FaUserGraduate } from "react-icons/fa";
 export const Education = [
   {
     icon: <FaUserGraduate className="icon" />,
-    date: "2022 - PRESENT",
-    title: "LEAD UX/UI - DESIGNERSNAPAP",
+    date: "PRESENT",
+    title: "UX DESIGN CERTIFICATION - GOOGLE",
     description:
-      "SnapAP streamlines Procurement activities while providing Accounts Payable Processing plus Payments Transactions Automation for numerous client organizations who are located around the globe and operating across multiple industry verticals. Delivered as a cloud-based software solution and mobile application, the SnapAP platform facilitates a consistent, best practices approach to managing the entire Procurement To Payment / Purchasing To Payment workflow overall.",
+      "On my free time, I am working on the 6 month course from Google on UX Design online with Coursera.",
   },
 
   {
     icon: <FaUserGraduate className="icon" />,
-    date: "2021 - 2022",
-    title: "FULL STACK DEVELOPER - THINKMAX",
+    date: "AUG 2021",
+    title: "CODE BOOTCAMP - CODER FOUNDRY",
     description:
-      "At Thinkmax, I am primarily working with Optimizely/Episerver - [CMS/ecommerce] and React. I use tools like ADO, D365, LCS, SSMS and Git on a daily basis.\nMy day looks like: working on bug fixes, implementing scss/front-end changes, adding new modules/blocks/features, etc. I write, test, build and deploy the code, while documenting the cases and communicating with the client and our support team.",
+      "Graduate of Coder Foundry's self-paced Coding Bootcamp. The course covered HTML, CSS, JS, Bootstrap, C#, ASP.NET, Postgresql, Security, Hosting, etc.",
   },
 
   {
     icon: <FaUserGraduate className="icon" />,
-    date: "2017",
-    title: "FINANCIAL ADVISOR - RBC",
+    date: "2020 - 2021",
+    title: "WEB & MOBILE APPLICATION DEVELOPMENT - NBCC",
     description:
-      "Gained a deep understanding of client financial needs & goals in order to provide tailored advice. Delivered high-quality financial support spanning mortgages, loans, credit lines, and credit products.",
+      "Completed full year at NBCC in Web & Mobile Application Development in June of 2021.",
+  },
+
+  {
+    icon: <FaUserGraduate className="icon" />,
+    date: "2011",
+    title: "HIGH SCHOOL GRADUATE - MONCTON HIGH SCHOOL",
+    description: "Graduated from Moncton High School in June of 2011.",
   },
 ];
