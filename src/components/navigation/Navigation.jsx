@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "./navigation.css";
+
+// importing stylesheets:
+import "./Navigation.css";
 
 // import local components
 import NavItem from "./components/NavItem";

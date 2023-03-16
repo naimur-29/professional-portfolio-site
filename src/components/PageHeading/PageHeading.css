@@ -27,6 +27,7 @@
   font-weight: 900;
   letter-spacing: 10px;
   font-family: var(--font-sans);
+  animation: 2s ease-in infinite alternate GlowWhiteFaded;
 }
 
 .main-heading-container .title {

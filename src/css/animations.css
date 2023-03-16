@@ -2,21 +2,21 @@
 iteration-count | direction | fill-mode | play-state | name */
 /* animation: 3s ease-in 1s 2 reverse both paused <name>; */
 
-@keyframes Swap {
+@keyframes ZoomIn {
   0% {
+    scale: 0;
     opacity: 0;
-    transform: rotateY(180deg) translate(0, -50%);
     box-shadow: none;
   }
 
   50% {
-    opacity: 0.2;
-    transform: rotateY(180deg);
+    scale: 0.1;
+    opacity: 0.1;
   }
 
   100% {
+    scale: 1;
     opacity: 1;
-    transform: rotateY(0) translate(0);
   }
 }
 
@@ -63,5 +63,24 @@ iteration-count | direction | fill-mode | play-state | name */
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes GlowWhite {
+  0% {
+    text-shadow: -1px 0px 3px var(--contact-heading);
+  }
+
+  100% {
+    text-shadow: 1px 0px 1px var(--contact-heading);
+  }
+}
+@keyframes GlowWhiteFaded {
+  0% {
+    text-shadow: -3px 0px 5px var(--contact-heading-faded);
+  }
+
+  100% {
+    text-shadow: 3px 0px 1px var(--contact-heading-faded);
   }
 }

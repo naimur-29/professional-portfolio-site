@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 10px 100px var(--about-text-cyan);
+  box-shadow: 0px 10px 120px var(--about-text-cyan);
 }
 /* LEFT END */
 

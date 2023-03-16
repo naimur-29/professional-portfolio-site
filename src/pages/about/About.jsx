@@ -9,6 +9,7 @@ import PageHeading from "../../components/PageHeading/PageHeading";
 // import local components
 import IntroSection from "./components/IntroSection/IntroSection";
 import ExpSection from "./components/ExpSection/ExpSection";
+import TechStackSection from "./components/TechStackSection/TechStackSection";
 
 const About = ({ setPageTitle }) => {
   useEffect(() => {
@@ -23,6 +24,8 @@ const About = ({ setPageTitle }) => {
         <IntroSection />
 
         <ExpSection />
+
+        <TechStackSection />
       </main>
     </section>
   );

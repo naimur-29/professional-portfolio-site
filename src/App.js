@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// importing stylesheets:
 import "./css/App.css";
 import "./css/variables.css";
 import "./css/animations.css";
 
-// Import pages
+// Importing pages
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Projects from "./pages/projects/Projects";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 
-// Import components
-import Layout from "./components/layout/Layout";
+// Importing Global Components
+import Layout from "./components/Layout/Layout";
+import Firefly from "./components/Firefly/Firefly";
 
 // Define App component
 const App = () => {
@@ -23,6 +25,8 @@ const App = () => {
   return (
     // Render main app container
     <section className="app-container">
+      {/* Background Animation using css */}
+      <Firefly />
       {/* Use BrowserRouter component to set up the router */}
       <Router>
         {/* Use Routes component to define the routes */}

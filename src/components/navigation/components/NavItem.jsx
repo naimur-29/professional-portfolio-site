@@ -8,6 +8,7 @@ const NavItem = ({
   link, // URL for the navigation item
   isNavLink = false, // flag to indicate whether the item is a navigation link or a regular link
   isMobile = false, // flag to indicate whether the item is in mobile view
+  background = "#64ffda",
 }) => {
   return isNavLink ? ( // if it's a navigation link
     <NavLink

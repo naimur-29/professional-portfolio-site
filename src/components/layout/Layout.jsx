@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 // local components:
-import Navigation from "../navigation/Navigation";
+import Navigation from "../Navigation/Navigation";
 
 // Layout component - this component is used as a wrapper around the application pages
 const Layout = ({ pageTitle }) => {
