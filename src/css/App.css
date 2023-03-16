@@ -23,7 +23,8 @@ with a background color, full width and height, and centered content */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: top;
-  opacity: 0.25;
+  background-position-x: center;
+  opacity: 0.2;
   transition: all 0.35s ease;
 }
 
