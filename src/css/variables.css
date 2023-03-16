@@ -45,8 +45,8 @@
   --home-button-hover-color: var(--color-cyan);
 
   /* contact page */
-  --contact-heading-faded: var(--color-white-op07);
   --contact-heading: var(--color-white);
+  --contact-heading-faded: var(--color-white-op07);
   --contact-heading-span: var(--color-cyan);
   --contact-icons: var(--color-cyan);
   --contact-paragraph: var(--color-slate);

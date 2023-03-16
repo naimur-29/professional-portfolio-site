@@ -69,6 +69,7 @@
 
 /* description */
 .exp-item-container > .right > .description {
+  /* background-color: rgba(0, 0, 0, 0.15); */
   color: var(--about-text-fade);
   font-weight: 400;
   font-size: 1rem;

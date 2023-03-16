@@ -219,7 +219,6 @@
     border-bottom: 1px solid var(--nav-background-hover);
     box-shadow: 0 10px 100px var(--nav-border-shadow);
     background-color: var(--main-background);
-    /* flex-direction: row-reverse; */
   }
 }
 
@@ -390,7 +389,6 @@
 
 /* :after */
 .page-container .mobile-navbar-container .mobile-menu-container::after {
-  background-color: #fff3;
   content: "";
   position: fixed;
   top: 0;

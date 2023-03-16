@@ -23,6 +23,12 @@
   animation: 1s ease SlideIn;
 }
 
+@media (min-width: 3000px) {
+  .homePage-container .main-container {
+    padding: 0 10% 0 9%;
+  }
+}
+
 @media (max-width: 1280px) {
   .homePage-container .main-container {
     padding: 0;

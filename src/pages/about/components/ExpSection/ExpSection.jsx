@@ -17,8 +17,9 @@ const ExpSection = () => {
 
       <div className="exp-content-container">
         <div className="left">
-          {Experiences.map((ele) => (
+          {Experiences.map((ele, i) => (
             <Item
+              key={i}
               icon={ele.icon}
               date={ele.date}
               title={ele.title}
@@ -28,8 +29,9 @@ const ExpSection = () => {
         </div>
 
         <div className="right">
-          {Education.map((ele) => (
+          {Education.map((ele, i) => (
             <Item
+              key={i}
               icon={ele.icon}
               date={ele.date}
               title={ele.title}
