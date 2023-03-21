@@ -239,16 +239,15 @@
 }
 
 .page-container .mobile-navbar-container .logo-container .logo {
-  background: transparent;
-  width: 48px;
-  height: 54px;
+  margin: 0 0 0 -5px;
+  width: 64px;
   object-fit: contain;
 }
 
 @media (max-width: 992px) {
   .page-container .mobile-navbar-container .logo-container .logo {
-    width: calc(0.9 * 48px);
-    height: calc(0.9 * 54px);
+    /* display: none; */
+    width: calc(0.9 * 64px);
   }
 }
 /* LOGO */
@@ -391,21 +390,19 @@
 /* :after */
 .page-container .mobile-navbar-container .mobile-menu-container::after {
   background-color: var(--nav-icon);
-  opacity: 1;
+  opacity: 0.9;
   content: "";
   position: fixed;
   top: 0;
-  left: -110%;
+  left: 0%;
   height: 100%;
   width: min(100vw);
   z-index: 990;
-  transition: all 1s ease-out;
+  transition: all 1s;
 }
 
 .page-container .mobile-navbar-container .mobile-menu-container.active::after {
   background-color: var(--main-background);
-  opacity: 0.9;
-  left: 0;
 }
 
 /* MENU ITEMS */

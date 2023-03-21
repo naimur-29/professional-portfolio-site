@@ -2,6 +2,16 @@
 iteration-count | direction | fill-mode | play-state | name */
 /* animation: 3s ease-in 1s 2 reverse both paused <name>; */
 
+@keyframes Flash {
+  0% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes ZoomIn {
   0% {
     scale: 0;

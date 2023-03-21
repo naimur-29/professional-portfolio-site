@@ -3,6 +3,9 @@ import React, { useState } from "react";
 // importing stylesheets:
 import "./Navigation.css";
 
+// importing local image source:
+import Logo from "../../assets/logo.webp";
+
 // import local components
 import NavItem from "./components/NavItem";
 
@@ -44,11 +47,7 @@ const Navigation = ({ pageTitle }) => {
       {/* Mobile Navigation bar */}
       <section className="mobile-navbar-container">
         <a href="/" className="logo-container">
-          <img
-            className="logo"
-            src="https://brittanyjonah.com/img/b-logo-small.png"
-            alt="logo"
-          />
+          <img className="logo" src={Logo} alt="logo" />
         </a>
 
         {/* Page title */}
