@@ -389,8 +389,6 @@
 
 /* :after */
 .page-container .mobile-navbar-container .mobile-menu-container::after {
-  background-color: var(--nav-icon);
-  opacity: 0.9;
   content: "";
   position: fixed;
   top: 0;
@@ -398,7 +396,7 @@
   height: 100%;
   width: min(100vw);
   z-index: 990;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .page-container .mobile-navbar-container .mobile-menu-container.active::after {
@@ -422,6 +420,7 @@
   color: var(--nav-icon);
   font-weight: 400;
   z-index: 999;
+  transition: all 0.2s;
 }
 
 .page-container
@@ -437,6 +436,15 @@
   .mobile-nav-items-container.active {
   color: var(--nav-background-hover);
   font-weight: 500;
+}
+
+@media (hover: hover) {
+  .page-container
+    .mobile-navbar-container
+    .mobile-menu-container
+    .mobile-nav-items-container:hover {
+    transform: translateX(10px);
+  }
 }
 
 /* ICON */
