@@ -1,9 +1,72 @@
 .tech-stack-section-container {
-  background-color: #fff3;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10px 0;
+  gap: 60px;
+}
+
+.tech-stack-section-container .heading {
+  color: var(--color-cyan);
+  font-weight: 100;
+  font-family: var(--font-pure-mono);
+}
+
+.tech-stack-section-container .main-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.tech-stack-section-container .main-container .content-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tech-stack-section-container .main-container .content-container .title {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-family: var(--fon-sans);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.tech-stack-section-container
+  .main-container
+  .content-container
+  .item-container {
+  border-radius: 12px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.tech-stack-section-container
+  .main-container
+  .content-container
+  .item-container
+  .icon {
+  object-fit: cover;
+  width: 18px;
+}
+
+.tech-stack-section-container
+  .main-container
+  .content-container
+  .item-container
+  .label {
+  color: var(--color-slate-dark);
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: var(--font-sans);
 }
