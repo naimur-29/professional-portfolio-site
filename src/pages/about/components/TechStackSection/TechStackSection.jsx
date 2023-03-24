@@ -16,44 +16,50 @@ const TechStackSection = () => {
       <div className="main-container">
         <div className="content-container">
           <h3 className="title">Languages</h3>
-          {Languages?.map(({ img, label, bgColor }, key) => (
-            <div
-              className="item-container"
-              key={key}
-              style={{ backgroundColor: bgColor }}
-            >
-              <img src={img} alt={`${label} icon`} className="icon" />
-              <span className="label">{label}</span>
-            </div>
-          ))}
+          <div className="item-container">
+            {Languages?.map(({ img, label, bgColor }, key) => (
+              <div
+                className="item"
+                key={key}
+                style={{ backgroundColor: bgColor }}
+              >
+                <img src={img} alt={`${label} icon`} className="icon" />
+                <span className="label">{label}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="content-container">
           <h3 className="title">Frameworks</h3>
-          {Languages?.map(({ img, label, bgColor }, key) => (
-            <div
-              className="item-container"
-              key={key}
-              style={{ backgroundColor: bgColor }}
-            >
-              <img src={img} alt={`${label} icon`} className="icon" />
-              <span className="label">{label}</span>
-            </div>
-          ))}
+          <div className="item-container">
+            {Languages?.map(({ img, label, bgColor }, key) => (
+              <div
+                className="item"
+                key={key}
+                style={{ backgroundColor: bgColor }}
+              >
+                <img src={img} alt={`${label} icon`} className="icon" />
+                <span className="label">{label}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="content-container">
           <h3 className="title">Tools</h3>
-          {Languages?.map(({ img, label, bgColor }, key) => (
-            <div
-              className="item-container"
-              key={key}
-              style={{ backgroundColor: bgColor }}
-            >
-              <img src={img} alt={`${label} icon`} className="icon" />
-              <span className="label">{label}</span>
-            </div>
-          ))}
+          <div className="item-container">
+            {Languages?.map(({ img, label, bgColor }, key) => (
+              <div
+                className="item"
+                key={key}
+                style={{ backgroundColor: bgColor }}
+              >
+                <img src={img} alt={`${label} icon`} className="icon" />
+                <span className="label">{label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
