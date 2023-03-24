@@ -9,9 +9,7 @@ import { Languages, Frameworks, Tools } from "../../data/TechStacks";
 const TechStackSection = () => {
   return (
     <section className="tech-stack-section-container">
-      <h3 className="heading">
-        Here are the technologies I've been working with recently
-      </h3>
+      <h3 className="heading">Here are the technologies I've worked with</h3>
 
       <div className="main-container">
         <div className="content-container">
