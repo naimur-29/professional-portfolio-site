@@ -3,7 +3,7 @@ import React from "react";
 // import style sheet
 import "./IntroSection.css";
 
-import { IntroSectionData } from "../../data/IntroSectionData.js";
+import { IntroSectionData } from "../../data/IntroSectionData";
 
 // import icons
 import { ImDownload2 } from "react-icons/im";
