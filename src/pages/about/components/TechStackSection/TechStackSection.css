@@ -56,6 +56,7 @@
   .content-container
   .item-container
   .item {
+  background-color: var(--color-cyan-op15);
   width: 100%;
   border-radius: 12px;
   padding: 6px 12px;
@@ -82,7 +83,7 @@
   .item
   .label {
   color: var(--color-slate);
-  color: #ff3;
+  /* color: #ff3; */
   font-weight: 500;
   font-size: 1.2rem;
   font-family: var(--font-sans);

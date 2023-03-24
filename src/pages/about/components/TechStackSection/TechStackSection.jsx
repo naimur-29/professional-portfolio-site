@@ -4,7 +4,7 @@ import React from "react";
 import "./TechStackSection.css";
 
 // importing local data:
-import { Languages } from "../../data/TechStacks";
+import { Languages, Frameworks, Tools } from "../../data/TechStacks";
 
 const TechStackSection = () => {
   return (
@@ -31,9 +31,9 @@ const TechStackSection = () => {
         </div>
 
         <div className="content-container">
-          <h3 className="title">Frameworks</h3>
+          <h3 className="title">Frameworks / Libraries</h3>
           <div className="item-container">
-            {Languages?.map(({ img, label, bgColor }, key) => (
+            {Frameworks?.map(({ img, label, bgColor }, key) => (
               <div
                 className="item"
                 key={key}
@@ -49,7 +49,7 @@ const TechStackSection = () => {
         <div className="content-container">
           <h3 className="title">Tools</h3>
           <div className="item-container">
-            {Languages?.map(({ img, label, bgColor }, key) => (
+            {Tools?.map(({ img, label, bgColor }, key) => (
               <div
                 className="item"
                 key={key}
