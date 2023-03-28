@@ -8,7 +8,8 @@ with a background color, full width and height, and centered content */
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: clip;
+  /* clip works same as "hidden" but allows position sticky */
 }
 
 .app-container::before {

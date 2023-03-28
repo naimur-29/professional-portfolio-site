@@ -12,9 +12,13 @@ const Projects = ({ setPageTitle }) => {
   }, [setPageTitle]);
 
   return (
-    <div>
+    <section className="projects-section-container">
       <PageHeading heading={["My ", "Projects"]} pageName={"Works"} />
-    </div>
+
+      <div className="projects-container">
+        <div className="project"></div>
+      </div>
+    </section>
   );
 };
 
