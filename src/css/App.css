@@ -9,7 +9,6 @@ with a background color, full width and height, and centered content */
   justify-content: center;
   position: relative;
   overflow-x: hidden;
-  animation: Flash 0.5s ease-in;
 }
 
 .app-container::before {
