@@ -14,6 +14,7 @@ import TechStackSection from "./components/TechStackSection/TechStackSection";
 const About = ({ setPageTitle }) => {
   useEffect(() => {
     setPageTitle(["About", " Me"]);
+    window.scrollTo(0, 0);
   }, [setPageTitle]);
 
   return (

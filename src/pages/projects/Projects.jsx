@@ -8,6 +8,7 @@ import PageHeading from "../../components/PageHeading/PageHeading";
 const Projects = ({ setPageTitle }) => {
   useEffect(() => {
     setPageTitle(["My", " Projects"]);
+    window.scrollTo(0, 0);
   }, [setPageTitle]);
 
   return (

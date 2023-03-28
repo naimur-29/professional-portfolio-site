@@ -8,6 +8,7 @@ import PageHeading from "../../components/PageHeading/PageHeading";
 const Blog = ({ setPageTitle }) => {
   useEffect(() => {
     setPageTitle(["My", " Blog"]);
+    window.scrollTo(0, 0);
   }, [setPageTitle]);
 
   return (

@@ -13,6 +13,7 @@ const Contact = ({ setPageTitle }) => {
   // set page title when component mounts
   useEffect(() => {
     setPageTitle(["Get In", " Touch"]);
+    window.scrollTo(0, 0);
   }, [setPageTitle]);
 
   return (

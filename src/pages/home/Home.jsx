@@ -10,6 +10,7 @@ const Home = ({ setPageTitle }) => {
   useEffect(() => {
     // Setting the page title
     setPageTitle(["Home", " Page"]);
+    window.scrollTo(0, 0);
   }, [setPageTitle]);
 
   return (
