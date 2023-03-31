@@ -2,8 +2,14 @@ import React, { useEffect } from "react";
 
 import "./Projects.css";
 
-// import global components
+// importing global components:
 import PageHeading from "../../components/PageHeading/PageHeading";
+
+// importing local components:
+import ProjectCard from "./components/ProjectCard/ProjectCard";
+
+// importing local data:
+import { ProjectsData } from "./data/projectsData";
 
 const Projects = ({ setPageTitle }) => {
   useEffect(() => {
@@ -16,7 +22,9 @@ const Projects = ({ setPageTitle }) => {
       <PageHeading heading={["My ", "Projects"]} pageName={"Works"} />
 
       <div className="projects-container">
-        <div className="project"></div>
+        {ProjectsData?.map((project) => (
+          <ProjectCard projectInfo={project} />
+        ))}
       </div>
     </section>
   );
