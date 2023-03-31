@@ -11,6 +11,15 @@ const ProjectCard = ({ projectInfo }) => {
     <div className="project-card-container">
       <div className="img-container">
         <img src={projectInfo?.imgLink || DefaultImage} alt="project preview" />
+      </div>
+
+      <div className="content">
+        <h3 className="title">{projectInfo.title || "no title!"}</h3>
+        <article className="description">
+          {projectInfo.description || "no descriptions!"}
+        </article>
+
+        {/* hovered Buttons for navigation */}
         <div className="button-container">
           <a
             href={projectInfo.visitLink || "/"}
@@ -29,13 +38,6 @@ const ProjectCard = ({ projectInfo }) => {
             Code
           </a>
         </div>
-      </div>
-
-      <div className="content">
-        <h3 className="title">{projectInfo.title || "no title!"}</h3>
-        <article className="description">
-          {projectInfo.description || "no descriptions!"}
-        </article>
       </div>
     </div>
   );

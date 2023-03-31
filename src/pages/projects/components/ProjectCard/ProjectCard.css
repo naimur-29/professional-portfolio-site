@@ -7,14 +7,18 @@
   flex-direction: column;
   cursor: pointer;
   transition: all 0.2s;
-  box-shadow: 0 10px 20px var(--color-cyan-op15);
+  box-shadow: 0 10px 10px var(--color-navy-dark-op70);
 }
 
 @media (hover: hover) {
   .project-card-container:hover {
-    box-shadow: 0 10px 10px var(--color-navy-dark-op70);
+    box-shadow: 0 10px 20px var(--color-cyan-op15);
     transform: translateY(-3px);
     z-index: 999;
+    /* 
+    animation: pulse 0.5s;
+    border-radius: 5;
+    box-shadow: 0 0 0 4em transparent; */
   }
 }
 
@@ -23,64 +27,10 @@
   background: var(--color-navy-dark-op70);
   width: 100%;
   min-height: 200px;
-  position: relative;
   border-radius: 5px 5px 0 0;
   border-bottom: 5px solid var(--color-cyan);
   overflow: hidden;
-  transition: 0.35s;
-}
-
-.project-card-container .img-container .button-container {
-  background: var(--color-navy-dark-op70);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px 5px 0 0;
-  display: flex;
-}
-
-@media (hover: hover) {
-  .project-card-container .img-container .button-container {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  /* hover */
-  .project-card-container:hover .img-container .button-container {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-.project-card-container .img-container .button-container > .btn {
-  background-color: transparent;
-  text-decoration: underline;
-  width: 100%;
-  cursor: pointer;
-  color: var(--color-cyan);
-  font-weight: 700;
-  font-family: var(--font-sans);
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* hover */
-@media (hover: hover) {
-  .project-card-container .img-container .button-container > .btn {
-    text-decoration: none;
-    color: var(--color-white);
-    transition: all 0.15s;
-  }
-
-  .project-card-container .img-container .button-container > .btn:hover {
-    color: var(--color-cyan);
-    text-decoration: underline;
-  }
+  transition: 0.2s;
 }
 
 .project-card-container .img-container > img {
@@ -107,24 +57,97 @@
 
 /* CONTENT PART START */
 .project-card-container .content {
-  /* background-color: var(--color-navy-dark); */
+  background-color: var(--color-navy-dark);
   backdrop-filter: blur(2px);
   color: var(--color-white);
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
   border-radius: 0 0 5px 5px;
   font-family: var(--font-sans);
+  position: relative;
 }
 
-.project-card-container .content .title {
+/* hover */
+@media (hover: hover) {
+  .project-card-container .content {
+    padding: 20px;
+    background-color: transparent;
+    transition: 0.2s;
+  }
+
+  .project-card-container:hover .content {
+    background-color: var(--color-navy-dark-op70);
+  }
+}
+
+.project-card-container .content > .title {
   margin-bottom: 8px;
   font-size: 1.7rem;
   font-weight: 500;
 }
 
 /* hover */
-.project-card-container:hover .content .title {
-  color: var(--color-cyan);
+@media (hover: hover) {
+  .project-card-container:hover .content > .title {
+    color: var(--color-cyan);
+  }
 }
+
+/* LINK BUTTONS START */
+.project-card-container .content .button-container {
+  background: var(--color-navy-dark-op70);
+  width: 100%;
+  padding: 12px 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+}
+
+@media (hover: hover) {
+  .project-card-container .content .button-container {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+  }
+
+  /* hover */
+  .project-card-container:hover .content .button-container {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.project-card-container .content .button-container > .btn {
+  background-color: transparent;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: var(--color-cyan);
+  font-weight: 700;
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+@media (hover: hover) {
+  .project-card-container .content .button-container > .btn {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: all 0.15s;
+  }
+
+  .project-card-container .content .button-container > .btn:hover {
+    color: var(--color-cyan);
+    text-decoration: underline;
+  }
+}
+/* LINK BUTTONS END */
 /* CONTENT PART END */
