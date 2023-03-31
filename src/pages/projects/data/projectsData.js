@@ -1,57 +1,66 @@
+// importing local assets:
+
 export const ProjectsData = [
   {
-    title: "",
+    title: "Ferm Queue Site",
     description:
-      "https://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.png",
-    imgLink: "",
-    visitLink: "",
-    codeLink: "",
+      "I've developed this platform for connecting emerging musicians with my client. Streamlined submission process & created modern interface..",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
   },
   {
-    title: "",
-    description:
-      "Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.png",
-    imgLink: "",
-    visitLink: "",
-    codeLink: "",
-  },
-  {
-    title: "",
+    title: "AnimePahe Rebuild",
     description: "",
-    imgLink: "",
-    visitLink: "",
-    codeLink: "",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
   },
   {
-    title: "",
+    title: "Get Umbrellas",
     description:
-      "https://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.png",
-    imgLink: "",
-    visitLink: "",
-    codeLink: "",
+      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
   },
   {
-    title: "",
+    title: "Quiz App",
     description:
-      "Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.png",
-    imgLink: "",
-    visitLink: "",
-    codeLink: "",
+      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
   },
   {
-    title: "",
+    title: "Ferm Queue Site",
     description:
-      "https://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.png",
-    imgLink: "",
-    visitLink: "",
-    codeLink: "",
+      "I've developed this platform for connecting emerging musicians with my client. Streamlined submission process & created modern interface..",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
   },
   {
-    title: "",
+    title: "AnimePahe Rebuild",
+    description: "",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
+  },
+  {
+    title: "Get Umbrellas",
     description:
-      "Portfolio_01/raw/main/readme-imgs/01.pnghttps://github.com/naimur-29/Portfolio_01/raw/main/readme-imgs/01.png",
-    imgLink: "",
-    visitLink: "",
-    codeLink: "",
+      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
+  },
+  {
+    title: "Quiz App",
+    description:
+      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
+    imgLink: [],
+    visitLink: "https://www.upcomingartistradio.com/",
+    codeLink: "https://github.com/naimur-29/ferm-queue-site",
   },
 ];

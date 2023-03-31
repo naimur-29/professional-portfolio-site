@@ -2,6 +2,36 @@
 iteration-count | direction | fill-mode | play-state | name */
 /* animation: 3s ease-in 1s 2 reverse both paused <name>; */
 
+@keyframes ImageSlide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+
+  25% {
+    transform: translateX(-100%);
+  }
+  35% {
+    transform: translateX(-200%);
+  }
+
+  50% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+
+  75% {
+    transform: translateX(-300%);
+  }
+  85% {
+    transform: translateX(0);
+  }
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 var(--color-cyan-op15);

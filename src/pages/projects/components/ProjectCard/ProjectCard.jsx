@@ -6,11 +6,42 @@ import "./ProjectCard.css";
 // importing local assets:
 import DefaultImage from "../../../../assets/logo.png";
 
-const ProjectCard = ({ projectInfo }) => {
+const ProjectCard = ({
+  projectInfo = {
+    title: "",
+    description: "",
+    imgLink: "",
+    visitLink: "",
+    codeLink: "",
+  },
+}) => {
   return (
     <div className="project-card-container">
-      <div className="img-container">
-        <img src={projectInfo?.imgLink || DefaultImage} alt="project preview" />
+      <div className="img-slider">
+        <div className="img-container">
+          <img
+            src={projectInfo?.imgLink[0] || DefaultImage}
+            alt="project preview"
+          />
+        </div>
+        <div className="img-container">
+          <img
+            src={projectInfo?.imgLink[1] || DefaultImage}
+            alt="project preview"
+          />
+        </div>
+        <div className="img-container">
+          <img
+            src={projectInfo?.imgLink[2] || DefaultImage}
+            alt="project preview"
+          />
+        </div>
+        <div className="img-container">
+          <img
+            src={projectInfo?.imgLink[3] || DefaultImage}
+            alt="project preview"
+          />
+        </div>
       </div>
 
       <div className="content">
