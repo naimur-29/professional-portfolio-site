@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 
 import "./Contact.css";
 
@@ -8,6 +9,21 @@ import PageHeading from "../../components/PageHeading/PageHeading";
 // import react icons
 import { MdOutlineContactMail, MdOutlineContactPhone } from "react-icons/md";
 import { FaRegPaperPlane } from "react-icons/fa";
+
+// motion variants:
+const zoomIn = (count) => ({
+  hidden: { y: "-5%", scale: 0.7, opacity: 0 },
+  visible: {
+    y: "0%",
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      damping: 8,
+      delay: count * 0.1,
+    },
+  },
+});
 
 const Contact = ({ setPageTitle }) => {
   // set page title when component mounts
@@ -21,7 +37,12 @@ const Contact = ({ setPageTitle }) => {
       <PageHeading heading={["Get In ", "Touch"]} pageName={"Contact"} />
 
       <main className="main-content-container">
-        <div className="left">
+        <motion.div
+          variants={zoomIn(0)}
+          initial="hidden"
+          animate="visible"
+          className="left"
+        >
           <h3 className="heading">Say hello!</h3>
 
           <p className="description">
@@ -53,21 +74,39 @@ const Contact = ({ setPageTitle }) => {
               </div>
             </a>
           </div>
-        </div>
+        </motion.div>
 
         <div className="right">
-          <div className="input-fields-container">
+          <motion.div
+            variants={zoomIn(1)}
+            initial="hidden"
+            animate="visible"
+            className="input-fields-container"
+          >
             {/* inputs for name, email, and subject */}
-            <input className="contact-input" type="text" placeholder="Name" />
-            <input className="contact-input" type="email" placeholder="Email" />
-            <input
+            <motion.input
+              className="contact-input"
+              type="text"
+              placeholder="Name"
+            />
+            <motion.input
+              className="contact-input"
+              type="email"
+              placeholder="Email"
+            />
+            <motion.input
               className="contact-input"
               type="text"
               placeholder="Subject"
             />
-          </div>
+          </motion.div>
 
-          <div className="textarea-container">
+          <motion.div
+            variants={zoomIn(2)}
+            initial="hidden"
+            animate="visible"
+            className="textarea-container"
+          >
             {/* textarea for message */}
             <textarea
               name="message"
@@ -76,9 +115,14 @@ const Contact = ({ setPageTitle }) => {
               rows="10"
               placeholder="Message"
             ></textarea>
-          </div>
+          </motion.div>
 
-          <div className="btn-container">
+          <motion.div
+            variants={zoomIn(3)}
+            initial="hidden"
+            animate="visible"
+            className="btn-container"
+          >
             {/* submit button */}
             <button className="btn">
               <span>Send Message</span>
@@ -86,7 +130,7 @@ const Contact = ({ setPageTitle }) => {
                 <FaRegPaperPlane className="icon" />
               </div>
             </button>
-          </div>
+          </motion.div>
         </div>
       </main>
     </section>

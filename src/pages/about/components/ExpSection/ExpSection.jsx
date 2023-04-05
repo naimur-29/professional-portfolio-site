@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 // import style sheets
 import "./ExpSection.css";
@@ -10,9 +11,30 @@ import Item from "./components/Item/Item";
 import { Experiences } from "../../data/Experiences";
 import { Education } from "../../data/Education";
 
+// motion variants:
+const mainSectionVariants = {
+  hidden: { y: "5%", opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      duration: 0.1,
+      delay: 0.3,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const ExpSection = () => {
   return (
-    <section className="exp-section-container">
+    <motion.section
+      variants={mainSectionVariants}
+      initial="hidden"
+      animate="visible"
+      className="exp-section-container"
+    >
       <h2 className="section-heading">Experience & Education</h2>
 
       <div className="exp-content-container">
@@ -24,6 +46,7 @@ const ExpSection = () => {
               date={ele.date}
               title={ele.title}
               description={ele.description}
+              count={i + 1}
             />
           ))}
         </div>
@@ -36,6 +59,7 @@ const ExpSection = () => {
               date={ele.date}
               title={ele.title}
               description={ele.description}
+              count={i + 1}
             />
           ))}
         </div>
@@ -49,7 +73,7 @@ const ExpSection = () => {
       >
         Learn More
       </a>
-    </section>
+    </motion.section>
   );
 };
 

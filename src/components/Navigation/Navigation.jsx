@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 // importing stylesheets:
 import "./Navigation.css";
@@ -22,7 +24,12 @@ const Navigation = ({ pageTitle }) => {
   return (
     <section className="page-container">
       {/* Social media links */}
-      <section className="social-nav-container">
+      <motion.section
+        animate={{ x: 0 }}
+        initial={{ x: "-100%", y: "-50%" }}
+        transition={{ delay: 0.5 }}
+        className="social-nav-container"
+      >
         {socials.map((item, index) => (
           <NavItem
             key={index}
@@ -31,19 +38,47 @@ const Navigation = ({ pageTitle }) => {
             link={item.link}
           />
         ))}
-      </section>
+      </motion.section>
+
       {/* Navigation menu for larger screens */}
-      <section className="page-nav-container">
+      <motion.section
+        animate={{ x: 0 }}
+        initial={{ x: "100%", y: "-50%" }}
+        transition={{ delay: 0.5 }}
+        className="page-nav-container"
+      >
         {pages.map((item, index) => (
-          <NavItem
+          // <NavItem
+          //   key={index}
+          //   icon={item.icon}
+          //   context={item.context}
+          //   link={item.link}
+          //   isNavLink={true}
+          // />
+
+          <NavLink
             key={index}
-            icon={item.icon}
-            context={item.context}
-            link={item.link}
-            isNavLink={true}
-          />
+            to={item.link}
+            className={(
+              { isActive } // dynamically set class name based on whether the link is active
+            ) =>
+              isActive
+                ? `${"nav-items-container active"}`
+                : `${"nav-items-container"}`
+            }
+            onClick={() => {
+              // function to close menu in mobile view when the link is clicked
+              setIsMenuActive(false);
+            }}
+          >
+            {/* icon for the navigation link */}
+            <div className="icon-container">{item.icon}</div>
+            {/* text for the navigation link */}
+            <div className="link">{item.context}</div>
+          </NavLink>
         ))}
-      </section>
+      </motion.section>
+
       {/* Mobile Navigation bar */}
       <section className="mobile-navbar-container">
         <a href="/" className="logo-container">

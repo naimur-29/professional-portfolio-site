@@ -1,10 +1,26 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 // importing stylesheets:
 import "./ProjectCard.css";
 
 // importing local assets:
 import DefaultImage from "../../../../assets/logo.png";
+
+// motion variants:
+const projectCardVariants = (count) => ({
+  hidden: { y: "-100%", scale: 0.7, opacity: 0 },
+  visible: {
+    y: "0%",
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      damping: 8,
+      delay: count * 0.1,
+    },
+  },
+});
 
 const ProjectCard = ({
   projectInfo = {
@@ -14,9 +30,15 @@ const ProjectCard = ({
     visitLink: "",
     codeLink: "",
   },
+  count = 1,
 }) => {
   return (
-    <div className="project-card-container">
+    <motion.div
+      variants={projectCardVariants(count)}
+      initial="hidden"
+      animate="visible"
+      className="project-card-container"
+    >
       <div className="img-slider">
         <div className="img-container">
           <img
@@ -70,7 +92,7 @@ const ProjectCard = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

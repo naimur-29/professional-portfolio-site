@@ -22,8 +22,8 @@ const Projects = ({ setPageTitle }) => {
       <PageHeading heading={["My ", "Projects"]} pageName={"Works"} />
 
       <div className="projects-container">
-        {ProjectsData?.map((project) => (
-          <ProjectCard projectInfo={project} />
+        {ProjectsData?.map((project, index) => (
+          <ProjectCard key={index} projectInfo={project} count={index + 1} />
         ))}
       </div>
     </section>

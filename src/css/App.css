@@ -12,14 +12,16 @@ with a background color, full width and height, and centered content */
   /* clip works same as "hidden" but allows position sticky */
 }
 
-.app-container::before {
+/* BG Image */
+/* .app-container::before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: url("https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg"); */
+  background: url("https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg");
+  background: url("https://wallpapercave.com/wp/wp1951676.jpg");
   background-image: url("../assets/main-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +29,8 @@ with a background color, full width and height, and centered content */
   background-position-x: center;
   opacity: 0.2;
   transition: all 0.35s ease;
-}
+  animation: ZoomInBackground 0.7s ease;
+} */
 
 /* This class is for the layout component within the app-container,
 which sets up the layout for the page content */

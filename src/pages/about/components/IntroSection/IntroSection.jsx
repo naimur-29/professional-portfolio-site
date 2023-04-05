@@ -1,17 +1,54 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 // import style sheet
 import "./IntroSection.css";
 
+// importing local data:
 import { IntroSectionData } from "../../data/IntroSectionData";
 
 // import icons
 import { ImDownload2 } from "react-icons/im";
 
+// motion variants:
+const boxVariants = {
+  hidden: {
+    scale: 0,
+    opacity: 0,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "just",
+      duration: 0.2,
+    },
+  },
+};
+
+const topTextVariants = {
+  hidden: {
+    y: "5%",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+    },
+  },
+};
+
 const IntroSection = () => {
   return (
     <section className="intro-section-container">
-      <div className="left">
+      <motion.div
+        variants={topTextVariants}
+        initial="hidden"
+        animate="visible"
+        className="left"
+      >
         <h3 className="heading">{IntroSectionData.left.heading}</h3>
 
         <article className="description">
@@ -26,11 +63,16 @@ const IntroSection = () => {
             </div>
           </button>
         </div>
-      </div>
+      </motion.div>
 
       <div className="right">
         <div className="top">
-          <div className="container">
+          <motion.div
+            variants={boxVariants}
+            initial="hidden"
+            animate="visible"
+            className="container"
+          >
             <h3 className="amount">
               <span>{IntroSectionData.right.top.totalExpYears}</span>+
             </h3>
@@ -38,9 +80,14 @@ const IntroSection = () => {
               <div className="line"></div>
               <div className="text">Years Of Experience</div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="container">
+          <motion.div
+            variants={boxVariants}
+            initial="hidden"
+            animate="visible"
+            className="container"
+          >
             <h3 className="amount">
               <span>{IntroSectionData.right.top.totalToolsUsed}</span>+
             </h3>
@@ -48,10 +95,15 @@ const IntroSection = () => {
               <div className="line"></div>
               <div className="text">Technologies Used</div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="bottom">
+        <motion.div
+          variants={topTextVariants}
+          initial="hidden"
+          animate="visible"
+          className="bottom"
+        >
           <div className="container">
             <div className="inner-container">
               <h3 className="label">Name:</h3>
@@ -91,7 +143,7 @@ const IntroSection = () => {
               <p className="context">{IntroSectionData.right.bottom.email}</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

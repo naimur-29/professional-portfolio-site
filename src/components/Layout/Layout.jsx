@@ -1,6 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
+import "./Layout.css";
+
 // local components:
 import Navigation from "../Navigation/Navigation";
 

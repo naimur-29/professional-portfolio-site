@@ -38,12 +38,12 @@
   cursor: pointer;
   text-decoration: none;
   z-index: 999;
-  animation: 0.25s ease-in-out 0.5s backwards SlideFromLeft;
+  /* animation: 0.25s ease-in-out 0.5s backwards SlideFromLeft; */
 }
 
 .page-container .page-nav-container .nav-items-container {
   flex-direction: row-reverse;
-  animation: 0.25s ease-in-out 0.5s backwards SlideFromRight;
+  /* animation: 0.25s ease-in-out 0.5s backwards SlideFromRight; */
 }
 
 @media (max-width: 992px) {
@@ -80,7 +80,12 @@
   .social-nav-container
   .nav-items-container:hover
   .icon-container,
-.page-container .page-nav-container .nav-items-container:hover .icon-container {
+.page-container .page-nav-container .nav-items-container:hover .icon-container,
+.page-container
+  .social-nav-container
+  .nav-items-container:focus
+  .icon-container,
+.page-container .page-nav-container .nav-items-container:focus .icon-container {
   background-color: var(--nav-background-hover);
 }
 
@@ -113,6 +118,16 @@
   .page-nav-container
   .nav-items-container:hover
   .icon-container
+  .icon,
+.page-container
+  .social-nav-container
+  .nav-items-container:focus
+  .icon-container
+  .icon,
+.page-container
+  .page-nav-container
+  .nav-items-container:focus
+  .icon-container
   .icon {
   color: var(--nav-icon-hover);
 }
@@ -141,6 +156,7 @@
   transition: all 0.15s ease-out;
   text-decoration: none;
   opacity: 0;
+  visibility: hidden;
 }
 
 .page-container .page-nav-container .nav-items-container .link {
@@ -160,6 +176,7 @@
   border-radius: 0 30px 30px 0;
   translate: -22px 0;
   opacity: 1;
+  visibility: visible;
   box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -171,7 +188,9 @@
 
 /* :hover:after */
 .page-container .social-nav-container .nav-items-container:hover .link:after,
-.page-container .page-nav-container .nav-items-container:hover .link:after {
+.page-container .page-nav-container .nav-items-container:hover .link:after,
+.page-container .social-nav-container .nav-items-container:focus .link:after,
+.page-container .page-nav-container .nav-items-container:focus .link:after {
   border-radius: 50%;
 }
 /* LINKS */

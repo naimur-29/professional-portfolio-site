@@ -9,18 +9,6 @@ const Firefly = () => {
       <div className="firefly"></div>
       <div className="firefly"></div>
       <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
-      <div className="firefly"></div>
     </div>
   );
 };

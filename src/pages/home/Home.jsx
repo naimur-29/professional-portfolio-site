@@ -1,7 +1,21 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import "./Home.css";
+
+// motion variants:
+const mainSectionVariants = {
+  hidden: { y: "5%", opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.75,
+      type: "tween",
+    },
+  },
+};
 
 const Home = ({ setPageTitle }) => {
   // Using the useNavigate hook to navigate to other pages
@@ -15,8 +29,24 @@ const Home = ({ setPageTitle }) => {
 
   return (
     // Section for the home page
-    <section className="homePage-container">
-      <main className="main-container">
+    <section
+      // exit={{
+      //   y: "-100vw",
+      //   opacity: 0,
+      // }}
+      // transition={{
+      //   type: "just",
+      //   duration: 1,
+      //   ease: "easeInOut",
+      // }}
+      className="homePage-container"
+    >
+      <motion.main
+        variants={mainSectionVariants}
+        initial="hidden"
+        animate="visible"
+        className="main-container"
+      >
         <p className="paragraph">
           <span className="highlighted">Hi, my name is</span>
         </p>
@@ -50,7 +80,7 @@ const Home = ({ setPageTitle }) => {
             <span className="highlighted">Get In Touch</span>
           </button>
         </div>
-      </main>
+      </motion.main>
     </section>
   );
 };

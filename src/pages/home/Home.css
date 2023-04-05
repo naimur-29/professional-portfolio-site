@@ -21,7 +21,7 @@
   flex-direction: column;
   gap: 21px;
   line-height: 1.3;
-  animation: 1s ease SlideIn;
+  /* animation: 1s ease SlideIn; */
 }
 
 @media (min-width: 3000px) {
@@ -168,13 +168,16 @@
 
 /* :hover */
 @media (hover: hover) {
-  .homePage-container .main-container .btn:hover {
+  .homePage-container .main-container .btn:hover,
+  .homePage-container .main-container .btn:focus {
     transform: translateY(-5%);
     box-shadow: 0 5px 20px var(--button-shadow);
   }
 
   .homePage-container .main-container .btn:hover::after,
-  .homePage-container .main-container .btn:hover::before {
+  .homePage-container .main-container .btn:hover::before,
+  .homePage-container .main-container .btn:focus::after,
+  .homePage-container .main-container .btn:focus::before {
     width: 100%;
   }
 }

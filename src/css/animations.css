@@ -130,3 +130,15 @@ iteration-count | direction | fill-mode | play-state | name */
     text-shadow: 3px 0px 1px var(--contact-heading-faded);
   }
 }
+
+@keyframes ZoomInBackground {
+  0% {
+    opacity: 0;
+    scale: 2;
+  }
+
+  100% {
+    opacity: 0.2;
+    scale: 1;
+  }
+}

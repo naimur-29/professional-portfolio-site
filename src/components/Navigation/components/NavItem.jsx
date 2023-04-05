@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const NavItem = ({
   setIsMenuActive, // function to update menu state in mobile view
@@ -11,6 +11,7 @@ const NavItem = ({
 }) => {
   return isNavLink ? ( // if it's a navigation link
     <NavLink
+      as={Link}
       to={link}
       className={(
         { isActive } // dynamically set class name based on whether the link is active

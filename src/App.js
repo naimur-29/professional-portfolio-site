@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 // importing stylesheets:
 import "./css/App.css";
@@ -22,15 +23,18 @@ const App = () => {
   // Set the initial state for the page title, using useState hook
   const [pageTitle, setPageTitle] = useState(["Home", " Page"]);
 
+  // get route location information:
+  const location = useLocation();
+
   return (
     // Render main app container
     <section className="app-container">
       {/* Background Animation using css */}
       <Firefly />
       {/* Use BrowserRouter component to set up the router */}
-      <Router>
+      <AnimatePresence>
         {/* Use Routes component to define the routes */}
-        <Routes>
+        <Routes location={location} key={location.key}>
           {/* Wrap all the routes with the Layout component */}
           <Route path="/" element={<Layout pageTitle={pageTitle} />}>
             {/* Define the Home page route */}
@@ -55,9 +59,12 @@ const App = () => {
               path="/contact"
               element={<Contact setPageTitle={setPageTitle} />}
             />
+
+            {/* handling invalid paths */}
+            <Route path="*" element={<h1>error 404: page not found!!</h1>} />
           </Route>
         </Routes>
-      </Router>
+      </AnimatePresence>
     </section>
   );
 };
