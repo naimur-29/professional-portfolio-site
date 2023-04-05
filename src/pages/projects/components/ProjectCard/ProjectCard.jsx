@@ -9,7 +9,7 @@ import DefaultImage from "../../../../assets/logo.png";
 
 // motion variants:
 const projectCardVariants = (count) => ({
-  hidden: { y: "100%", scale: 0.7, opacity: 0 },
+  hidden: { y: "-100%", scale: 0.7, opacity: 0 },
   visible: {
     y: "0%",
     scale: 1,

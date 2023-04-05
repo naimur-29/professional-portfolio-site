@@ -1,5 +1,19 @@
 :root {
-  /* colors */
+  /* colors day */
+  /* --color-cyan: #ccd6f6;
+  --color-cyan-op15: #ccd6f626;
+  --color-cyan-op35: #ccd6f659;
+  --color-black: #000;
+  --color-navy: #121212;
+  --color-navy-dark: #111;
+  --color-navy-dark-op70: #111111b3;
+  --color-slate: #fff;
+  --color-slate-dark: #fefefe;
+  --color-slate-darker: #f1f1f1;
+  --color-white: #fff;
+  --color-white-op07: #ffffff12; */
+
+  /* colors night */
   --color-cyan: #64ffda;
   --color-cyan-op15: #64ffda26;
   --color-cyan-op35: #64ffda59;
