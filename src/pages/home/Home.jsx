@@ -29,18 +29,7 @@ const Home = ({ setPageTitle }) => {
 
   return (
     // Section for the home page
-    <section
-      // exit={{
-      //   y: "-100vw",
-      //   opacity: 0,
-      // }}
-      // transition={{
-      //   type: "just",
-      //   duration: 1,
-      //   ease: "easeInOut",
-      // }}
-      className="homePage-container"
-    >
+    <section className="homePage-container">
       <motion.main
         variants={mainSectionVariants}
         initial="hidden"
