@@ -48,7 +48,6 @@ const ProjectCard = ({
       href={projectInfo.visitLink || "/"}
       target="_blank"
       rel="noreferrer"
-      title="click to visit"
     >
       <div className="img-container">
         <img src={projectInfo?.imgLink || DefaultImage} alt="blog preview" />

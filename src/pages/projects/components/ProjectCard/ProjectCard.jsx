@@ -43,7 +43,6 @@ const ProjectCard = ({
       initial="hidden"
       animate="visible"
       className="project-card-container"
-      title="hover to slide"
     >
       <div className="img-slider">
         <div className="img-container">
