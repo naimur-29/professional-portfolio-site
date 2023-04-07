@@ -7,10 +7,15 @@ import "./ProjectCard.css";
 // importing local assets:
 import DefaultImage from "../../../../assets/logo.png";
 
+// functions:
+// const removeDecimal = (n) => n - Math.ceil(n);
+// const staggerValue = (n, x) => n / x - removeDecimal(n / x);
+
 // motion variants:
 const projectCardVariants = (count) => ({
-  hidden: { y: "-100%", scale: 0.7, opacity: 0 },
+  hidden: { x: 10, y: "-100%", scale: 0.7, opacity: 0 },
   visible: {
+    x: "0%",
     y: "0%",
     scale: 1,
     opacity: 1,
@@ -26,7 +31,7 @@ const ProjectCard = ({
   projectInfo = {
     title: "",
     description: "",
-    imgLink: "",
+    imgLink: [],
     visitLink: "",
     codeLink: "",
   },
@@ -38,6 +43,7 @@ const ProjectCard = ({
       initial="hidden"
       animate="visible"
       className="project-card-container"
+      title="hover to slide"
     >
       <div className="img-slider">
         <div className="img-container">

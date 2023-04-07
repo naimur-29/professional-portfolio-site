@@ -2,7 +2,6 @@
 import {
   BsGithub,
   BsYoutube,
-  BsTwitter,
   BsPersonBoundingBox,
   BsFillCollectionFill,
 } from "react-icons/bs";
@@ -10,6 +9,7 @@ import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { HiHomeModern } from "react-icons/hi2";
 import { SiGooglemessages } from "react-icons/si";
 import { IoCall } from "react-icons/io5";
+import { SiHashnode } from "react-icons/si";
 
 export const socials = [
   {
@@ -33,9 +33,9 @@ export const socials = [
     link: "https://www.facebook.com/naimur29/",
   },
   {
-    context: "Twitter",
-    icon: <BsTwitter className="icon" />,
-    link: "/",
+    context: "hashnode",
+    icon: <SiHashnode className="icon" />,
+    link: "https://naimur29.hashnode.dev/",
   },
 ];
 
