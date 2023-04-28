@@ -13,9 +13,8 @@ import DefaultImage from "../../../../assets/logo.png";
 
 // motion variants:
 const projectCardVariants = (count) => ({
-  hidden: { x: 10, y: "-100%", scale: 0.7, opacity: 0 },
+  hidden: { y: "-100%", scale: 0.7, opacity: 0 },
   visible: {
-    x: "0%",
     y: "0%",
     scale: 1,
     opacity: 1,
