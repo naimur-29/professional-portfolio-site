@@ -48,11 +48,14 @@ const Home = ({ setPageTitle }) => {
         </div>
 
         <article className="paragraph">
-          I am a Full Stack Developer specializing in building beautiful UX/UI
-          designs that deliver exceptional digital experiences. Currently, I'm
-          focused on building beautiful designs at{" "}
+          <span className="highlighted">
+            Experienced Web Developer and JavaScript Engineer.
+          </span>{" "}
+          Proficient in React.js, HTML, CSS, SASS, Tailwind CSS, FastAPI.
+          Passionate about machine learning and data analysis. Let's create
+          exceptional websites together.
           {/* Highlighting the company name */}
-          <span className="highlighted">SnapAP</span>.
+          {/* <span className="highlighted">SnapAP</span>. */}
         </article>
 
         <div
