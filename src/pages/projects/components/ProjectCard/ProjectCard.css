@@ -32,7 +32,8 @@
 }
 
 .project-card-container .img-slider .img-container {
-  background: var(--color-navy-dark-op70);
+  /* background: var(--color-navy-dark-op70); */
+  background: var(--color-cyan-op15);
   min-width: 100%;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
@@ -57,14 +58,14 @@
 
 @media (hover: hover) {
   .project-card-container .img-slider .img-container > img {
-    transform: scale(1.25);
+    transform: scale(1);
   }
 
   .project-card-container:hover .img-slider .img-container > img {
-    transform: scale(1);
+    transform: scale(0.95);
+    object-fit: contain;
   }
 }
-
 /* IMAGE PART END */
 
 /* CONTENT PART START */

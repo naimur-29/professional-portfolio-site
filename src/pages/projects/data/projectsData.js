@@ -1,66 +1,33 @@
 // importing local assets:
+import {
+  spendWise,
+  boomEscape,
+  uarQueue,
+} from "../../../assets/projects/export";
 
 export const ProjectsData = [
   {
-    title: "Ferm Queue Site",
+    title: "UAR Queue System",
     description:
-      "I've developed this platform for connecting emerging musicians with my client. Streamlined submission process & created modern interface..",
-    imgLink: [],
+      "UAR Queue is a web-based queueing system designed for one of my client who's a streamer. Leveraging React.js for the frontend & FastAPI (Python) for the backend, the system uses PostgreSQL for efficient data management.",
+    imgLink: [...uarQueue],
     visitLink: "https://www.upcomingartistradio.com/",
     codeLink: "https://github.com/naimur-29/ferm-queue-site",
   },
   {
-    title: "AnimePahe Rebuild",
-    description: "",
-    imgLink: [],
-    visitLink: "https://www.upcomingartistradio.com/",
-    codeLink: "https://github.com/naimur-29/ferm-queue-site",
-  },
-  {
-    title: "Get Umbrellas",
+    title: "SpendWise: Built with Firebase & React.js",
     description:
-      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
-    imgLink: [],
-    visitLink: "https://www.upcomingartistradio.com/",
-    codeLink: "https://github.com/naimur-29/ferm-queue-site",
+      "SpendWise is a financial tracking web app built with Firebase & React.js. It efficiently manages expenses and income, featuring secure data storage with Firebase & a seamless user interface with React.js",
+    imgLink: [...spendWise],
+    visitLink: "https://spendwise.naimur29.com/",
+    codeLink: "https://github.com/naimur-29/SpendWise",
   },
   {
-    title: "Quiz App",
+    title: "BoomEscape: Vanilla JS Web Game",
     description:
-      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
-    imgLink: [],
-    visitLink: "https://www.upcomingartistradio.com/",
-    codeLink: "https://github.com/naimur-29/ferm-queue-site",
-  },
-  {
-    title: "Ferm Queue Site",
-    description:
-      "I've developed this platform for connecting emerging musicians with my client. Streamlined submission process & created modern interface..",
-    imgLink: [],
-    visitLink: "https://www.upcomingartistradio.com/",
-    codeLink: "https://github.com/naimur-29/ferm-queue-site",
-  },
-  {
-    title: "AnimePahe Rebuild",
-    description: "",
-    imgLink: [],
-    visitLink: "https://www.upcomingartistradio.com/",
-    codeLink: "https://github.com/naimur-29/ferm-queue-site",
-  },
-  {
-    title: "Get Umbrellas",
-    description:
-      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
-    imgLink: [],
-    visitLink: "https://www.upcomingartistradio.com/",
-    codeLink: "https://github.com/naimur-29/ferm-queue-site",
-  },
-  {
-    title: "Quiz App",
-    description:
-      "This queuing site is a platform designed for upcoming artists to submit their music to be played on a stream for a client. I've used React.js, FastAPI, MongoDB.",
-    imgLink: [],
-    visitLink: "https://www.upcomingartistradio.com/",
-    codeLink: "https://github.com/naimur-29/ferm-queue-site",
+      "BoomEscape is a web-based game, similar to Minesweeper, highlighting my expertise in Vanilla JavaScript. This project demonstrates my ability to create engaging web games using pure JavaScript.",
+    imgLink: [...boomEscape],
+    visitLink: "https://boomescape.naimur29.com/",
+    codeLink: "https://github.com/naimur-29/BoomEscape",
   },
 ];
