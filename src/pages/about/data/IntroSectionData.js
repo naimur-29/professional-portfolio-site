@@ -2,7 +2,7 @@ export const IntroSectionData = {
   left: {
     heading: "Who Am I?",
     description:
-      "Hello, I'm Naimur, a Full Stack Developer. I'm a very consistent learner. I work with React JS for frontend & FastAPI in backend. I've experience using both SQL & No SQL databases. But mostly I've worked with PostgreSQL. Also I really love working with machine learning. I love & try learning something new everyday.",
+      "Hello, I'm Naimur, a Frontend Developer with a strong interest in Artificial Intelligence (AI). I specialize in React JS for frontend development and have experience with FastAPI, Node.js, SQL, and NoSQL databases. I'm particularly passionate about machine learning & am committed to continuous learning.",
   },
   right: {
     top: {

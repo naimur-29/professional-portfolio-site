@@ -6,6 +6,7 @@ import "./IntroSection.css";
 
 // importing local data:
 import { IntroSectionData } from "../../data/IntroSectionData";
+import resume from "../../data/resume.pdf";
 
 // import icons
 import { ImDownload2 } from "react-icons/im";
@@ -57,7 +58,13 @@ const IntroSection = () => {
 
         <div className="btn-container">
           <button className="btn">
-            <span>Download CV</span>
+            <a
+              style={{ textDecoration: "none", color: "inherit" }}
+              href={resume}
+              download="Resume of Naimur Rahman"
+            >
+              Download CV
+            </a>
             <div className="icon-container">
               <ImDownload2 className="icon" />
             </div>
