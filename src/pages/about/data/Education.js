@@ -3,33 +3,17 @@ import { FaUserGraduate } from "react-icons/fa";
 
 export const Education = [
   {
+    date: "2022 - PRESENT",
     icon: <FaUserGraduate className="icon" />,
-    date: "PRESENT",
-    title: "UX DESIGN CERTIFICATION - GOOGLE",
+    title: "Bachelor of Computer Science and Engineering",
     description:
-      "On my free time, I am working on the 6 month course from Google on UX Design online with Coursera.",
+      "I began my Bachelor's degree in Computer Science in 2022, and it is currently in progress. I expect to complete it around the beginning of 2026. My university is designed to allow for both work and study simultaneously. IUBAT—International University of Business Agriculture and Technology: https://iubat.edu",
   },
-
   {
     icon: <FaUserGraduate className="icon" />,
-    date: "AUG 2021",
-    title: "CODE BOOTCAMP - CODER FOUNDRY",
+    date: "2019 - 2021",
+    title: "HSC (General Science), GPA - 5.0/5.0",
     description:
-      "Graduate of Coder Foundry's self-paced Coding Bootcamp. The course covered HTML, CSS, JS, Bootstrap, C#, ASP.NET, Postgresql, Security, Hosting, etc.",
-  },
-
-  {
-    icon: <FaUserGraduate className="icon" />,
-    date: "2020 - 2021",
-    title: "WEB & MOBILE APPLICATION DEVELOPMENT - NBCC",
-    description:
-      "Completed full year at NBCC in Web & Mobile Application Development in June of 2021.",
-  },
-
-  {
-    icon: <FaUserGraduate className="icon" />,
-    date: "2011",
-    title: "HIGH SCHOOL GRADUATE - MONCTON HIGH SCHOOL",
-    description: "Graduated from Moncton High School in June of 2011.",
+      "I completed my Higher Secondary Education in General Science in 2021 from Gazipur Cantonment College: https://www.gccbof.edu.bd",
   },
 ];

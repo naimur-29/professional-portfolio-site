@@ -4,25 +4,25 @@ import { SiExpertsexchange } from "react-icons/si";
 export const Experiences = [
   {
     icon: <SiExpertsexchange className="icon" />,
-    date: "2022 - PRESENT",
-    title: "LEAD UX/UI - DESIGNERSNAPAP",
+    date: "Project",
+    title: "UAR Queue System",
     description:
-      "SnapAP streamlines Procurement activities while providing Accounts Payable Processing plus Payments Transactions Automation for numerous client organizations who are located around the globe and operating across multiple industry verticals. Delivered as a cloud-based software solution and mobile application, the SnapAP platform facilitates a consistent, best practices approach to managing the entire Procurement To Payment / Purchasing To Payment workflow overall.",
+      "UAR Queue is a web-based queueing system designed for one of my client who's a streamer. Leveraging React.js for the frontend & FastAPI (Python) for the backend, the system uses PostgreSQL for efficient data management. Source Code: https://github.com/naimur-29/ferm-queue-site",
   },
 
   {
     icon: <SiExpertsexchange className="icon" />,
-    date: "2021 - 2022",
-    title: "FULL STACK DEVELOPER - THINKMAX",
+    date: "Project",
+    title: "SpendWise",
     description:
-      "At Thinkmax, I am primarily working with Optimizely/Episerver - [CMS/ecommerce] and React. I use tools like ADO, D365, LCS, SSMS and Git on a daily basis.\nMy day looks like: working on bug fixes, implementing scss/front-end changes, adding new modules/blocks/features, etc. I write, test, build and deploy the code, while documenting the cases and communicating with the client and our support team.",
+      "SpendWise is a financial tracking web app built with Firebase & React.js. It efficiently manages expenses and income, featuring secure data storage with Firebase & a seamless user interface with React.js. Source Code: https://github.com/naimur-29/ferm-queue-site",
   },
 
   {
     icon: <SiExpertsexchange className="icon" />,
-    date: "2017",
-    title: "FINANCIAL ADVISOR - RBC",
+    date: "Project",
+    title: "BoomEscape",
     description:
-      "Gained a deep understanding of client financial needs & goals in order to provide tailored advice. Delivered high-quality financial support spanning mortgages, loans, credit lines, and credit products.",
+      "BoomEscape is a web-based game, similar to Minesweeper, highlighting my expertise in Vanilla JavaScript. This project demonstrates my ability to create engaging web games using pure JavaScript. Source Code: https://github.com/naimur-29/BoomEscape",
   },
 ];
