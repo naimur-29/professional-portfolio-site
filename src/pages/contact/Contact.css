@@ -445,6 +445,15 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* IF DISABLED */
+.contactPage-container
+  .main-content-container
+  .right
+  .btn-container
+  .btn:disabled {
+  opacity: 0.5;
+}
+
 .contactPage-container
   .main-content-container
   .right
@@ -511,7 +520,7 @@
     .main-content-container
     .right
     .btn-container
-    .btn:hover {
+    .btn:enabled:hover {
     transform: translateY(-5%);
     box-shadow: 0 5px 20px var(--button-shadow);
   }
@@ -520,12 +529,12 @@
     .main-content-container
     .right
     .btn-container
-    .btn:hover::after,
+    .btn:enabled:hover::after,
   .contactPage-container
     .main-content-container
     .right
     .btn-container
-    .btn:hover::before {
+    .btn:enabled:hover::before {
     width: 100%;
   }
 }

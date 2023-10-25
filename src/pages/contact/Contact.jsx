@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 import "./Contact.css";
 
@@ -26,6 +27,65 @@ const zoomIn = (count) => ({
 });
 
 const Contact = ({ setPageTitle }) => {
+  // states:
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [sendMessageButton, setSendMessageButton] = useState("Send Message");
+
+  // refs:
+  const timeoutRef = useRef(null);
+
+  const sendMessage = (e) => {
+    e.preventDefault();
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+
+    if (
+      form.name &&
+      form.email &&
+      form.message &&
+      form.email.includes("@") &&
+      form.email.includes(".")
+    ) {
+      setSendMessageButton("Sending...");
+
+      const serviceID = "service_qwx4pnv";
+      const templateID = "template_rykivom";
+      const publicKey = "LYYQUNW8GKdhl3jV0";
+
+      emailjs.send(serviceID, templateID, form, publicKey).then(
+        (res) => {
+          setSendMessageButton("Message Sent!");
+          setForm({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+
+          timeoutRef.current = setTimeout(() => {
+            setSendMessageButton("Send Message");
+          }, 5000);
+        },
+        (err) => {
+          setSendMessageButton("Failed To Send!");
+
+          timeoutRef.current = setTimeout(() => {
+            setSendMessageButton("Send Message");
+          }, 5000);
+        }
+      );
+    } else {
+      setSendMessageButton("Invalid Info!");
+      timeoutRef.current = setTimeout(() => {
+        setSendMessageButton("Send Message");
+      }, 5000);
+    }
+  };
+
   // set page title when component mounts
   useEffect(() => {
     setPageTitle(["Get In", " Touch"]);
@@ -87,17 +147,29 @@ const Contact = ({ setPageTitle }) => {
             <motion.input
               className="contact-input"
               type="text"
-              placeholder="Name"
+              placeholder="Name*"
+              value={form.name}
+              onChange={(e) =>
+                setForm((prev) => ({ ...prev, name: e.target.value }))
+              }
             />
             <motion.input
               className="contact-input"
               type="email"
-              placeholder="Email"
+              placeholder="Email*"
+              value={form.email}
+              onChange={(e) =>
+                setForm((prev) => ({ ...prev, email: e.target.value }))
+              }
             />
             <motion.input
               className="contact-input"
               type="text"
               placeholder="Subject"
+              value={form.subject}
+              onChange={(e) =>
+                setForm((prev) => ({ ...prev, subject: e.target.value }))
+              }
             />
           </motion.div>
 
@@ -113,7 +185,11 @@ const Contact = ({ setPageTitle }) => {
               id=""
               cols="30"
               rows="10"
-              placeholder="Message"
+              placeholder="Message*"
+              value={form.message}
+              onChange={(e) =>
+                setForm((prev) => ({ ...prev, message: e.target.value }))
+              }
             ></textarea>
           </motion.div>
 
@@ -124,10 +200,18 @@ const Contact = ({ setPageTitle }) => {
             className="btn-container"
           >
             {/* submit button */}
-            <button className="btn">
-              <span>Send Message</span>
+            <button
+              className="btn"
+              disabled={sendMessageButton !== "Send Message"}
+              onClick={sendMessage}
+            >
+              <span>{sendMessageButton}</span>
               <div className="icon-container">
-                <FaRegPaperPlane className="icon" />
+                {sendMessageButton === "Send Message" ? (
+                  <FaRegPaperPlane className="icon" />
+                ) : (
+                  <></>
+                )}
               </div>
             </button>
           </motion.div>
